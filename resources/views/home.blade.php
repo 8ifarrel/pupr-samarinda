@@ -75,7 +75,7 @@
             {{-- Dari bidang apa --}}
             <p class="mb-0 pb-0">
               <small> 
-                <a href="" class="text-decoration-none fw-bold text-black-50">
+                <a href="" class="text-decoration-none fw-bold text-black-5">
                   UPTD Saluran Drainase dan Sungai
                 </a> 
               </small>
