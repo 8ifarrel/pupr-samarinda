@@ -106,7 +106,7 @@
 </div>
 
 {{-- Struktur Organisasi (Bidang-bidang Kami) --}}
-<div class="col" style="background-color: #F8AC00;">
+<div class="row" style="background-color: #F8AC00;">
 
 </div>
     
