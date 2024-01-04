@@ -1,5 +1,5 @@
-<nav class="navbar jumbotron navbar-expand-lg" style="background-image: linear-gradient(180deg, rgba(22, 21, 108, 0.77) 0.35%, rgba(22, 21, 108, 0.00) 182.74%, rgba(22, 21, 108, 0.00) 182.76%, rgba(22, 21, 108, 0.08) 182.78%) !important;">
-  <div class="jumbotron container">
+<nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(180deg, rgba(22, 21, 108, 0.77) 0.35%, rgba(22, 21, 108, 0.00) 182.74%, rgba(22, 21, 108, 0.00) 182.76%, rgba(22, 21, 108, 0.08) 182.78%) !important;">
+  <div class="justify container">
 
     {{-- Logo Kota Samarinda --}}
     <a class="navbar-brand text-white logo-kota" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Logo_Kota_Samarinda.png" alt="..." height="55"></a>

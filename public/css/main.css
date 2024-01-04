@@ -3,7 +3,7 @@ a {
 }
 
 .logo-kota{
-  margin-left: -5%;
+  margin-left: -3%;
 }
 
 .vl{
@@ -18,4 +18,8 @@ a {
 
 .judul{
   text-align: center;
+}
+
+.nav-item{
+  margin-right: 0.5%;
 }
