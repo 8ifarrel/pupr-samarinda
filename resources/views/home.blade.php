@@ -104,10 +104,14 @@
     </div>
   </div>
 </div>
+<br>
 
 {{-- Struktur Organisasi (Bidang-bidang Kami) --}}
-<div class="row" style="background-color: #F8AC00;">
-  
+<div class="container-jumbotron" style="background-color: #F8AC00; width: 100; height: 500px;">
+        <div class="container">
+          <h1 class="judul pt-4">BIDANG-BIDANG KAMI</h1>
+          
+        </div>
 </div>
     
 @endsection

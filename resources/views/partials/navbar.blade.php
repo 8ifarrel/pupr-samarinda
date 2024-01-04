@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(180deg, rgba(22, 21, 108, 0.77) 0.35%, rgba(22, 21, 108, 0.00) 182.74%, rgba(22, 21, 108, 0.00) 182.76%, rgba(22, 21, 108, 0.08) 182.78%) !important;">
+<nav class="navbar jumbotron navbar-expand-lg" style="background-image: linear-gradient(180deg, rgba(22, 21, 108, 0.77) 0.35%, rgba(22, 21, 108, 0.00) 182.74%, rgba(22, 21, 108, 0.00) 182.76%, rgba(22, 21, 108, 0.08) 182.78%) !important;">
   <div class="jumbotron container">
 
     {{-- Logo Kota Samarinda --}}
@@ -100,8 +100,10 @@
         <div class="vl">
         
         </div>
-        <div>
-        <a href=""><i class="bi bi-search"></i></a>
+
+        {{-- icon--}}
+        <div class="d-flex align-items-center ms-4">
+        <a href=""><i class="bi bi-search" style="color: #F8AC00; height: 20px;"></i></a>
         </div>
       </ul>
     </div>

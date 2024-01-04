@@ -13,6 +13,9 @@ a {
 }
 
 .navbar-brand{
-  margin-right: 2%;
+  padding-right: 0%;
 }
 
+.judul{
+  text-align: center;
+}
