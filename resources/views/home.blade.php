@@ -23,14 +23,14 @@
 </div>
 
 {{-- Sambutan Kepala Dinas --}}
-<div class="d-flex flex-row my-5">
+<div class="d-flex flex-row py-5 mb-5 bg-body-secondary">
   {{-- Foto Kepala Dinas --}}
-  <div class=" ms-5 px-5">
-    <img src="/assets/temp/desy-damayanti-st-mt.png" class="img-fluid" alt="">
+  <div class="mt-auto mb-auto" style="width: 450px; height: 200px; background-color: #F8AC00;">
+    <img src="/assets/temp/desy-damayanti-st-mt.png" class="img-fluid position-relative" alt="" style="top: -50px; margin-left: 10rem;">
   </div>
 
   {{-- Teks Kepala Dinas --}}
-  <div class="card border-0 rounded-0 ms-auto w-75" style="background-color: #F8AC00;">
+  <div class="border-0 rounded-0 ms-5 ps-5" style="width: 60%">
     <div class="m-5">
       <p class="m-0 p-0 mb-3 fs-5 fw-bold">
         SAMBUTAN KEPALA DINAS
@@ -45,15 +45,20 @@
       </p>
 
       <p class="m-0 p-0">
-        Kami menampilkan Informasi dalam bentuk Pelayanan E-Government, sehingga seluruh masyarakat, dapat mengakses data terkait Perdagangan.
+        Kami menampilkan Informasi dalam bentuk Pelayanan E-Government sehingga seluruh masyarakat dapat mengakses data terkait perdagangan.
       </p>
+
+      {{-- Tombol profil selengkapnya --}}
+      <button class="mt-4 btn btn-primary border border-2 rounded-0 border-black bg-transparent text-black text-start" type="button">
+        Lihat Profil Selengkapnya
+      </button>
     </div>
   </div>
 </div>
 
 {{-- Berita Terbaru PUPR Samarinda --}}
 <div class="container">
-  <h1 class="mb-4 text-center">
+  <h1 class="mb-4 text-center fw-bold">
     Berita Terkini DPUPR Kota Samarinda
   </h1>
 
@@ -81,6 +86,7 @@
               </small>
             </p>
 
+            {{-- Waktu berita berapa lama --}}
             <p class="mt-0 pt-0">
               <small>
                 16 jam lalu
@@ -105,9 +111,94 @@
   </div>
 </div>
 
-{{-- Struktur Organisasi (Bidang-bidang Kami) --}}
-<div class="row" style="background-color: #F8AC00;">
-  
+{{-- Bidang-bidang kami --}}
+<div class="mt-5 pt-5" style="background-color: #F8AC00; padding-bottom: 20rem">
+  <h1 class="mb-4 text-center fw-bold">
+    Bidang-bidang Kami
+  </h1>
 </div>
-    
+
+{{-- Agenda Kegiatan --}}    
+<div class="w-75 ms-auto me-auto mt-5">
+  <h1 class="mb-4 text-center fw-bold">
+    Agenda Kegiatan
+  </h1>
+
+  <div class="calendar-body">
+    <div class="calendar-container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Minggu</div>
+            <div>Senin</div>
+            <div>Selasa</div>
+            <div>Rabu</div>
+            <div>Kamis</div>
+            <div>Jumat</div>
+            <div>Sabtu</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            <button class="today-btn">Today</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">wed</div>
+          <div class="event-date">12th december 2022</div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Add Event</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time From"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time To"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+{{-- Statistik Pengunjung --}}
+<div class="mt-5 pt-5" style="background-color: #F8AC00; padding-bottom: 20rem">
+  <h1 class="mb-4 text-center fw-bold">
+    Statistik Pengunjung
+  </h1>
+</div>
+
 @endsection
