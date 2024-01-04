@@ -1,3 +1,18 @@
 a {
   color: #16156C;
 }
+
+.logo-kota{
+  margin-left: -5%;
+}
+
+.vl{
+  border-left: 1px solid #F8AC00;;
+  height: 50px;
+  margin-left: 2%;
+}
+
+.navbar-brand{
+  margin-right: 2%;
+}
+

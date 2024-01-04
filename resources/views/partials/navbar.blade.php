@@ -1,8 +1,14 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #16156C !important;">
-  <div class="container">
+<nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(180deg, rgba(22, 21, 108, 0.77) 0.35%, rgba(22, 21, 108, 0.00) 182.74%, rgba(22, 21, 108, 0.00) 182.76%, rgba(22, 21, 108, 0.08) 182.78%) !important;">
+  <div class="jumbotron container">
+
+    {{-- Logo Kota Samarinda --}}
+    <a class="navbar-brand text-white logo-kota" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Logo_Kota_Samarinda.png" alt="..." height="55"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     {{-- Logo PUPR Kota Samarinda --}}
-    <a class="navbar-brand text-white" href="#">LOGO</a>
+    <a class="navbar-brand text-white logo-pupr" href="#"><img src="/assets/temp/LOGO PUPR - 2023.png" alt="..." height="55"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,13 +18,13 @@
       <ul class="navbar-nav ms-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
         
         {{-- Home --}}
-        <li class="nav-item text-white">
-          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        <li class="nav-item text-secondary">
+          <a class="nav-link active text fw-bolder" style="color: rgba(217, 217, 217, 1);" aria-current="page" href="#">Home</a>
         </li>
         
         {{-- Profil --}}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-warning fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Profil
           </a>
           <ul class="dropdown-menu">
@@ -34,7 +40,7 @@
 
         {{-- Informasi Dinas --}}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-warning fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Informasi Dinas
           </a>
           <ul class="dropdown-menu">
@@ -45,7 +51,7 @@
         
         {{-- Bidang Teknis --}}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-warning fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Bidang Teknis
           </a>
           <ul class="dropdown-menu">
@@ -64,7 +70,7 @@
 
         {{-- PPID Pelaksana --}}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-warning fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             PPID Pelaksana
           </a>
           <ul class="dropdown-menu">
@@ -82,7 +88,7 @@
 
         {{-- E-Library --}}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-warning fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             E-Library
           </a>
           <ul class="dropdown-menu">
@@ -91,6 +97,12 @@
           </ul>
         </li>
 
+        <div class="vl">
+        
+        </div>
+        <div>
+        <a href=""><i class="bi bi-search"></i></a>
+        </div>
       </ul>
     </div>
     
