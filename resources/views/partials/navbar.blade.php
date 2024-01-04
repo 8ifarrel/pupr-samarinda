@@ -103,7 +103,7 @@
 
         {{-- icon--}}
         <div class="d-flex align-items-center ms-4">
-        <a href=""><i class="bi bi-search" style="color: #F8AC00; height: 20px;"></i></a>
+        <a href=""><i class="bi bi-search" style="color: #F8AC00;"></i></a>
         </div>
       </ul>
     </div>
