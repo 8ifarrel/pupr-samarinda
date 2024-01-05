@@ -33,3 +33,15 @@ a {
   background-color: #F8AC00;
   transform: skewY(180deg);
 }
+
+.card-text:hover .card-title:hover{
+  color: #16156C;
+}
+
+body{
+  background-color: gray;
+}
+
+.card-text{
+  color: grey;
+}
