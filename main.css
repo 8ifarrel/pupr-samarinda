@@ -1,0 +1,47 @@
+a {
+  color: #16156C;
+}
+
+.logo-kota{
+  margin-left: -3%;
+}
+
+.vl{
+  border-left: 1px solid #F8AC00;;
+  height: 50px;
+  margin-left: 2%;
+}
+
+.navbar-brand{
+  padding-right: 0%;
+}
+
+.judul{
+  text-align: center;
+}
+
+.nav-item{
+  margin-right: 0.5%;
+}
+
+.card{
+  border: none;
+  background: none;
+}
+
+.card:hover{
+  background-color: #F8AC00;
+  transform: skewY(180deg);
+}
+
+.card-text:hover .card-title:hover{
+  color: #16156C;
+}
+
+body{
+  background-color: gray;
+}
+
+.card-text{
+  color: grey;
+}

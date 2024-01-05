@@ -107,11 +107,11 @@
 <br>
 
 {{-- Struktur Organisasi (Bidang-bidang Kami) --}}
-<div class="container row-span-3">
+<div class="content-center bidang" style="padding-left: 7%; background-color:white;">
 <h1 style="text-align: center">BIDANG-BIDANG KAMI</h1>
-  <div class="row" style="margin-left: 5rem; margin-right: 5rem;">
+  <div class="row">
   <a href="" style="text-decoration: none">
-<div class="card col-span-4" style="width: 18rem;">
+<div class="card col-span-3" style="width: 18rem;">
   <div class="card-body">
     <img src="/assets/temp/admin.png" alt="" style="height:70px; width: 70px;">
     <h5 class="card-title">1. Sekretariat</h5>
@@ -182,7 +182,7 @@
   </div>
     </a>
 </div>
-<div class="card col-span-3" style="width: 18rem;">
+<div class="card row-span-3" style="width: 18rem;">
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/Jembatan.png" alt="" style="height:70px; width: 70px;">
@@ -196,7 +196,7 @@
   <div class="card-body">
     <img src="/assets/temp/irigasi.png" alt="" style="height:70px; width: 70px;">
     <h5 class="card-title">10. UPTD SALURAN DRAINASE DAN SUNGAI</h5>
-    <p class="card-text">Melaksanakan kegiatan teknis operasional khususnya pemeliharaan saluran drainase dan irigasi</p>
+    <p class="card-text">Melaksanakan kegiatan teknis operasional khususnya pemeliharaan saluran drainase dan irigasi.</p>
   </div>
     </a>
 </div>
