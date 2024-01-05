@@ -9,7 +9,7 @@
         <a class="pe-2" href="#">
           <img src="assets/img/dpupr-kota-samarinda.png" alt="dpupr-kota-samarinda" style="height: 54px">
         </a>
-        <p class="fw-bold m-0" href="#">
+        <p class="fw-bold m-0">
           DINAS PEKERJAAN UMUM DAN <br> PENATAAN RUANG KOTA SAMARINDA
         </p>
       </div>
