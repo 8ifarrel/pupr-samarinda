@@ -1,6 +1,6 @@
-<div>
+<div style="font-size: var(--fs-md);">
   <div class="my-3" style="margin-right: 100px; margin-left: 100px">
-    <div class="d-flex justify-content-between container-fluid" style="color: var(--blue); font-size: var(--fs-md)">
+    <div class="d-flex justify-content-between container-fluid" style="color: var(--blue);">
       {{-- Logo --}}
       <div class="d-flex justify-content-start">
         <a class="pe-2" href="#">
@@ -29,7 +29,7 @@
       </button>
       
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav mx-auto my-2 my-lg-0" style="--bs-scroll-height: 100px; font-size: var(--fs-md);">
+        <ul class="navbar-nav mx-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="#">
               Beranda
