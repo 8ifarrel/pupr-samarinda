@@ -50,6 +50,8 @@
     </div>
   </div>
 </div>
+</div>
+
 
 {{-- Berita Terbaru PUPR Samarinda --}}
 <div class="container">
@@ -104,17 +106,19 @@
     </div>
   </div>
 </div>
+</div>
+
 <br>
 
 {{-- Struktur Organisasi (Bidang-bidang Kami) --}}
-<div class="content-center bidang" style="padding-left: 7%; background-color:white;">
-<h1 style="text-align: center">BIDANG-BIDANG KAMI</h1>
+<div class="flex mt-4 ms-auto struktur" style="padding-left: 7%; background-color:white;">
+<h1 style="text-align:center; padding-top:3%">BIDANG-BIDANG KAMI</h1>
   <div class="row">
   <a href="" style="text-decoration: none">
 <div class="card col-span-3" style="width: 18rem;">
   <div class="card-body">
     <img src="/assets/temp/admin.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">1. Sekretariat</h5>
+    <h5 class="card-title">Sekretariat</h5>
     <p class="card-text">Menyusun koordinasi penyusunan program, mengelola keuangan, kepegawaian kelengkapan kantor, dan administrasi</p>
     </a>
   </div>
@@ -123,7 +127,7 @@
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/keran.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">2. JARINGAN SUMBER AIR</h5>
+    <h5 class="card-title">JARINGAN SUMBER AIR</h5>
     <p class="card-text">Berfokus pada konservasi dan pengembangan sumber daya air.</p>
   </div>
   </a>
@@ -132,7 +136,7 @@
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/jalan.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">3. BINA MARGA</h5>
+    <h5 class="card-title">BINA MARGA</h5>
     <p class="card-text">Berfokus pada perumusan dan pelaksanaan penyelenggaraan jalan.</p>
   </div>
     </a>
@@ -141,16 +145,16 @@
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/gedung.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">4. CIPTA KARYA</h5>
+    <h5 class="card-title">CIPTA KARYA</h5>
     <p class="card-text">Berfokus pada pengembangan kawasan permukiman dan lingkungan.</p>
   </div>
     </a>
 </div>
-<div class="card col-span-3" style="width: 18rem;">
+<div class="card col-span-3 " style="width: 18rem;">
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/atk.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">5. BINA TEKNIK DAN JASA KONSTRUKSI</h5>
+    <h5 class="card-title">BINA TEKNIK DAN JASA KONSTRUKSI</h5>
     <p class="card-text">Mengawasi dan memanajemen konstruksi serta pembinaan jasa konstruksi.</p>
   </div>
     </a>
@@ -159,7 +163,7 @@
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/konstruksi.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">6. TATA RUANG</h5>
+    <h5 class="card-title">TATA RUANG</h5>
     <p class="card-text">Proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.</p>
   </div>
     </a>
@@ -168,16 +172,16 @@
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/3606486 1.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">7. BIDANG PERTANAHAN</h5>
+    <h5 class="card-title">BIDANG PERTANAHAN</h5>
     <p class="card-text">Membantu mengendalikan dan mengatur kebijakan teknis.</p>
   </div>
     </a>
 </div>
-<div class="card col-span-3" style="width: 18rem;">
+<div class="card col-span-15" style="width: 18rem;">
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/tanah.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">8. UPTD LIMBAH AIR DOMESTIK</h5>
+    <h5 class="card-title">UPTD LIMBAH AIR DOMESTIK</h5>
     <p class="card-text">Mengelola dan penangan masalah air dan limbah.</p>
   </div>
     </a>
@@ -186,7 +190,7 @@
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/Jembatan.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">9. UPTD JALAN DAN JEMBATAN</h5>
+    <h5 class="card-title">UPTD JALAN DAN JEMBATAN</h5>
     <p class="card-text">Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.</p>
   </div>
     </a>
@@ -195,12 +199,10 @@
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/irigasi.png" alt="" style="height:70px; width: 70px;">
-    <h5 class="card-title">10. UPTD SALURAN DRAINASE DAN SUNGAI</h5>
+    <h5 class="card-title">UPTD SALURAN DRAINASE DAN SUNGAI</h5>
     <p class="card-text">Melaksanakan kegiatan teknis operasional khususnya pemeliharaan saluran drainase dan irigasi.</p>
   </div>
     </a>
 </div>
 </div>
-</div>
-  </div>
 @endsection

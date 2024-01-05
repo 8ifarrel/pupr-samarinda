@@ -45,3 +45,12 @@ body{
 .card-text{
   color: grey;
 }
+
+h5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.struktur{
+  background-image: url(asset/proyek.jpg);
+}
