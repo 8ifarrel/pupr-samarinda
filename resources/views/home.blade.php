@@ -23,14 +23,14 @@
 </div>
 
 {{-- Sambutan Kepala Dinas --}}
-<div class="d-flex flex-row py-5 mb-5 bg-body-secondary">
+<div class="d-flex flex-row my-5">
   {{-- Foto Kepala Dinas --}}
-  <div class="mt-auto mb-auto" style="width: 450px; height: 200px; background-color: #F8AC00;">
-    <img src="/assets/temp/desy-damayanti-st-mt.png" class="img-fluid position-relative" alt="" style="top: -50px; margin-left: 10rem;">
+  <div class=" ms-5 px-5">
+    <img src="/assets/temp/desy-damayanti-st-mt.png" class="img-fluid" alt="">
   </div>
 
   {{-- Teks Kepala Dinas --}}
-  <div class="border-0 rounded-0 ms-5 ps-5" style="width: 60%">
+  <div class="card border-0 rounded-0 ms-auto w-75" style="background-color: #F8AC00;">
     <div class="m-5">
       <p class="m-0 p-0 mb-3 fs-5 fw-bold">
         SAMBUTAN KEPALA DINAS
@@ -45,20 +45,15 @@
       </p>
 
       <p class="m-0 p-0">
-        Kami menampilkan Informasi dalam bentuk Pelayanan E-Government sehingga seluruh masyarakat dapat mengakses data terkait perdagangan.
+        Kami menampilkan Informasi dalam bentuk Pelayanan E-Government, sehingga seluruh masyarakat, dapat mengakses data terkait Perdagangan.
       </p>
-
-      {{-- Tombol profil selengkapnya --}}
-      <button class="mt-4 btn btn-primary border border-2 rounded-0 border-black bg-transparent text-black text-start" type="button">
-        Lihat Profil Selengkapnya
-      </button>
     </div>
   </div>
 </div>
 
 {{-- Berita Terbaru PUPR Samarinda --}}
 <div class="container">
-  <h1 class="mb-4 text-center fw-bold">
+  <h1 class="mb-4 text-center">
     Berita Terkini DPUPR Kota Samarinda
   </h1>
 
@@ -86,7 +81,6 @@
               </small>
             </p>
 
-            {{-- Waktu berita berapa lama --}}
             <p class="mt-0 pt-0">
               <small>
                 16 jam lalu
@@ -110,95 +104,103 @@
     </div>
   </div>
 </div>
+<br>
 
-{{-- Bidang-bidang kami --}}
-<div class="mt-5 pt-5" style="background-color: #F8AC00; padding-bottom: 20rem">
-  <h1 class="mb-4 text-center fw-bold">
-    Bidang-bidang Kami
-  </h1>
-</div>
-
-{{-- Agenda Kegiatan --}}    
-<div class="w-75 ms-auto me-auto mt-5">
-  <h1 class="mb-4 text-center fw-bold">
-    Agenda Kegiatan
-  </h1>
-
-  <div class="calendar-body">
-    <div class="calendar-container">
-      <div class="left">
-        <div class="calendar">
-          <div class="month">
-            <i class="fas fa-angle-left prev"></i>
-            <div class="date">december 2015</div>
-            <i class="fas fa-angle-right next"></i>
-          </div>
-          <div class="weekdays">
-            <div>Minggu</div>
-            <div>Senin</div>
-            <div>Selasa</div>
-            <div>Rabu</div>
-            <div>Kamis</div>
-            <div>Jumat</div>
-            <div>Sabtu</div>
-          </div>
-          <div class="days"></div>
-          <div class="goto-today">
-            <div class="goto">
-              <input type="text" placeholder="mm/yyyy" class="date-input" />
-              <button class="goto-btn">Go</button>
-            </div>
-            <button class="today-btn">Today</button>
-          </div>
-        </div>
-      </div>
-      <div class="right">
-        <div class="today-date">
-          <div class="event-day">wed</div>
-          <div class="event-date">12th december 2022</div>
-        </div>
-        <div class="events"></div>
-        <div class="add-event-wrapper">
-          <div class="add-event-header">
-            <div class="title">Add Event</div>
-            <i class="fas fa-times close"></i>
-          </div>
-          <div class="add-event-body">
-            <div class="add-event-input">
-              <input type="text" placeholder="Event Name" class="event-name" />
-            </div>
-            <div class="add-event-input">
-              <input
-                type="text"
-                placeholder="Event Time From"
-                class="event-time-from"
-              />
-            </div>
-            <div class="add-event-input">
-              <input
-                type="text"
-                placeholder="Event Time To"
-                class="event-time-to"
-              />
-            </div>
-          </div>
-          <div class="add-event-footer">
-            <button class="add-event-btn">Add Event</button>
-          </div>
-        </div>
-      </div>
-      <button class="add-event">
-        <i class="fas fa-plus"></i>
-      </button>
-    </div>
+{{-- Struktur Organisasi (Bidang-bidang Kami) --}}
+<div class="container row-span-3">
+<h1 style="text-align: center">BIDANG-BIDANG KAMI</h1>
+  <div class="row" style="margin-left: 5rem; margin-right: 5rem;">
+  <a href="" style="text-decoration: none">
+<div class="card col-span-4" style="width: 18rem;">
+  <div class="card-body">
+    <img src="/assets/temp/admin.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">1. Sekretariat</h5>
+    <p class="card-text">Menyusun koordinasi penyusunan program, mengelola keuangan, kepegawaian kelengkapan kantor, dan administrasi</p>
+    </a>
   </div>
 </div>
-
-{{-- Statistik Pengunjung --}}
-<div class="mt-5 pt-5" style="background-color: #F8AC00; padding-bottom: 20rem">
-  <h1 class="mb-4 text-center fw-bold">
-    Statistik Pengunjung
-  </h1>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/keran.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">2. JARINGAN SUMBER AIR</h5>
+    <p class="card-text">Berfokus pada konservasi dan pengembangan sumber daya air.</p>
+  </div>
+  </a>
 </div>
-
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/jalan.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">3. BINA MARGA</h5>
+    <p class="card-text">Berfokus pada perumusan dan pelaksanaan penyelenggaraan jalan.</p>
+  </div>
+    </a>
+</div>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/gedung.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">4. CIPTA KARYA</h5>
+    <p class="card-text">Berfokus pada pengembangan kawasan permukiman dan lingkungan.</p>
+  </div>
+    </a>
+</div>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/atk.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">5. BINA TEKNIK DAN JASA KONSTRUKSI</h5>
+    <p class="card-text">Mengawasi dan memanajemen konstruksi serta pembinaan jasa konstruksi.</p>
+  </div>
+    </a>
+</div>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/konstruksi.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">6. TATA RUANG</h5>
+    <p class="card-text">Proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.</p>
+  </div>
+    </a>
+</div>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/3606486 1.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">7. BIDANG PERTANAHAN</h5>
+    <p class="card-text">Membantu mengendalikan dan mengatur kebijakan teknis.</p>
+  </div>
+    </a>
+</div>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/tanah.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">8. UPTD LIMBAH AIR DOMESTIK</h5>
+    <p class="card-text">Mengelola dan penangan masalah air dan limbah.</p>
+  </div>
+    </a>
+</div>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/Jembatan.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">9. UPTD JALAN DAN JEMBATAN</h5>
+    <p class="card-text">Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.</p>
+  </div>
+    </a>
+</div>
+<div class="card col-span-3" style="width: 18rem;">
+<a href="" style="text-decoration: none">
+  <div class="card-body">
+    <img src="/assets/temp/irigasi.png" alt="" style="height:70px; width: 70px;">
+    <h5 class="card-title">10. UPTD SALURAN DRAINASE DAN SUNGAI</h5>
+    <p class="card-text">Melaksanakan kegiatan teknis operasional khususnya pemeliharaan saluran drainase dan irigasi</p>
+  </div>
+    </a>
+</div>
+</div>
+</div>
+  </div>
 @endsection
