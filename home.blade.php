@@ -111,7 +111,7 @@
 <br>
 
 {{-- Struktur Organisasi (Bidang-bidang Kami) --}}
-<div class="flex mt-4 ms-auto struktur" style="padding-left: 7%; background-color:white;">
+<div class="flex mt-4 ms-auto struktur" style="padding-left: 7%; background-image: url(assets/temp/proyek.jpg); background-size:cover">
 <h1 style="text-align:center; padding-top:3%">BIDANG-BIDANG KAMI</h1>
   <div class="row">
   <a href="" style="text-decoration: none">
@@ -186,7 +186,7 @@
   </div>
     </a>
 </div>
-<div class="card row-span-3" style="width: 18rem;">
+<div class="card row-span-3 bawah" style="width: 18rem;">
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/Jembatan.png" alt="" style="height:70px; width: 70px;">
@@ -195,7 +195,7 @@
   </div>
     </a>
 </div>
-<div class="card col-span-3" style="width: 18rem;">
+<div class="card row-span-3 bawah" style="width: 18rem;">
 <a href="" style="text-decoration: none">
   <div class="card-body">
     <img src="/assets/temp/irigasi.png" alt="" style="height:70px; width: 70px;">
@@ -204,5 +204,6 @@
   </div>
     </a>
 </div>
+    </td>
 </div>
 @endsection
