@@ -29,6 +29,10 @@ a {
   background: none;
 }
 
+.card-body{
+  position: relative;
+}
+
 .card:hover{
   background-color: #F8AC00;
   transform: skewY(180deg);
@@ -43,7 +47,7 @@ body{
 }
 
 .card-text{
-  color: grey;
+  color: black;
 }
 
 h5{
@@ -51,6 +55,7 @@ h5{
   font-weight: bolder;
 }
 
-.struktur{
-  background-image: url(asset/proyek.jpg);
+.bawah{
+  left: 25%;
+  right: 25%;
 }
