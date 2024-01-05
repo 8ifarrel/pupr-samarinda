@@ -12,7 +12,9 @@ class HomeController extends Controller
         $time = Carbon::parse('2024-01-05 11:01:10')->format('j F Y | H:i:s T');
 
         return view('home', [
-            'time' => $time
+            'time' => $time 
         ]);
     }
 }
+
+// assss
