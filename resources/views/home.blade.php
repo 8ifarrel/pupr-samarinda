@@ -22,7 +22,10 @@
 </div>
 
 {{-- Sambutan --}}
-<div style="height: 500px">
+<div class="container" style="background-color: var(--grey)">
+  <div class="">
 
+  </div>
 </div>
+
 @endsection
