@@ -9,12 +9,9 @@ class HomeController extends Controller
 {
     public function main()
     {
-        $time = Carbon::parse('2024-01-05 11:01:10')->format('j F Y | H:i:s T');
+        $currentDateTime = Carbon::now('Asia/Makassar');
+        $time = $currentDateTime->format('l, j F Y | H:i:s A');
 
-        return view('home', [
-            'time' => $time 
-        ]);
+        return view('home')->with('time', $time);
     }
 }
-
-// assss
