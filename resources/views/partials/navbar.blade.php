@@ -17,7 +17,7 @@
       {{-- Jam --}}
       <div class="d-flex justify-content-end align-items-center">
         <p class="m-0 fw-bold" id="current-time">
-          {{ $time }}
+          
         </p>
       </div>
     </div>
