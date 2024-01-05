@@ -22,4 +22,7 @@
 </div>
 
 {{-- Sambutan --}}
+<div>
+  
+</div>
 @endsection
