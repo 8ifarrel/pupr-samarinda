@@ -1,6 +1,6 @@
 <div>
   <div class="my-3" style="margin-right: 100px; margin-left: 100px">
-    <div class="d-flex justify-content-between container-fluid ">
+    <div class="d-flex justify-content-between container-fluid" style="color: var(--blue); font-size: var(--fs-md)">
       {{-- Logo --}}
       <div class="d-flex justify-content-start">
         <a class="pe-2" href="#">
@@ -9,13 +9,13 @@
         <a class="pe-2" href="#">
           <img src="assets/img/dpupr-kota-samarinda.png" alt="dpupr-kota-samarinda" style="height: 54px">
         </a>
-        <p class="fw-bold m-0" href="#" style="color: var(--blue); font-size: var(--fs-md)">
+        <p class="fw-bold m-0" href="#">
           DINAS PEKERJAAN UMUM DAN <br> PENATAAN RUANG KOTA SAMARINDA
         </p>
       </div>
 
       {{-- Jam --}}
-      <div class="d-flex justify-content-end align-items-center" style="color: var(--blue); font-size: var(--fs-md)">
+      <div class="d-flex justify-content-end align-items-center">
         <p class="m-0 fw-bold">5 Januari 2024 | 11:01:10 WITA</p>
       </div>
     </div>
@@ -29,7 +29,7 @@
       </button>
       
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav mx-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+        <ul class="navbar-nav mx-auto my-2 my-lg-0" style="--bs-scroll-height: 100px; font-size: var(--fs-md);">
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="#">
               Beranda
@@ -119,7 +119,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="btn fw-bold rounded-4 px-4" style="background-color: var(--yellow); color: var(--blue);">
+            <a class="nav-link btn fw-bold rounded-4 py-2 px-4" style="background-color: var(--yellow); color: var(--blue);">
               Pelayanan 
             </a>
           </li>
