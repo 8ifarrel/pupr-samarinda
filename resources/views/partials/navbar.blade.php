@@ -15,7 +15,7 @@
       </div>
 
       {{-- Jam --}}
-      <div class="d-flex justify-content-end align-items-center">
+      <div class="d-flex justify-content-end align-items-center" style="color: var(--blue); font-size: var(--fs-md)">
         <p class="m-0 fw-bold">5 Januari 2024 | 11:01:10 WITA</p>
       </div>
     </div>
