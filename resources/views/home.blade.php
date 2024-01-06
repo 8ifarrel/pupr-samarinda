@@ -130,52 +130,37 @@
 </div>
 
 {{-- Bidang-Bidang Kami --}}
-<div class="py-5 bg-grey">
+<div class="p-5 bg-grey">
   <div class="text-center">
     <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-      BERITA TERBARU
+      STRUKTUR ORGANISASI
     </p>
 
     <h1 class="fs-lg fw-bold mt-3 mb-5">
-      SEPUTAR PUPR SAMARINDA
+      BIDANG-BIDANG KAMI
     </h1>
   </div>
 
-  <div class="mx-3 row">
-    <?php for ($i = 0; $i < 6; $i++) { ?>
-      <div class="col-md-4 mb-4">
+  <div class="mx-3 row d-flex justify-content-center">
+    <?php for ($i = 0; $i < 10; $i++) { ?>
+      <div class="col-md-3 mb-4">
         <div class="card h-100 rounded-4 border-0 shadow mx-1">
-          <a href="" class="text-decoration-none">
-            <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
-              <p class="text-center m-0 fw-bold">
-                <small>
-                  UPTD Pemeliharaan Saluran Drainase dan Irigasi
-                </small>
-              </p>
-            </div>
-          </a>
-          
           <a href="" class="text-decoration-none text-black">
-            <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
 
             <div class="card-body d-flex align-items-start flex-column">
-              <h5 class="card-title fw-bold mb-0">
-                Penandatanganan Kontrak Rehabilitasi dan Renovasi Stadion
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                UPTD JALAN DAN JEMBATAN
               </h5>
 
-              <p class="card-text">
-                <small>
-                  Sabtu, 18 Mei 2023
-                </small>
+              <p class="card-text text-center">
+                Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
               </p>
 
-              <p class="card-text">
-                Dinas Pekerjaan Umum dan Penataan Ruang Kota Samarinda bersama dengan Komisi...
-              </p>
-
-              <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
-                Selengkapnya
-              </p>
+              <div class="mx-auto">
+                <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold">
+                  Selengkapnya
+                </p>
+              </div>
             </div>
           </a>
         </div>
