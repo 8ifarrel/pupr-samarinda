@@ -1,0 +1,44 @@
+
+<html lang="en">
+    <style>
+        body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.keran-logo {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(252, 183, 23, 0.52);;
+    border-radius: 50px;
+    position: relative;
+    animation: moveLeftRight 2s ease-in-out infinite;
+}
+
+@keyframes moveLeftRight {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Logo</title>
+</head>
+<body>
+    <div class="keran-logo" style="background: rgba(252, 183, 23, 0.52); flex-shrink: 0;">
+        <img src="image/keran.png" alt="animasi" height="150px" width="150px">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
