@@ -122,7 +122,7 @@
     <?php } ?>
   </div>
 
-  <div class="text-center mt-5 mb-4">
+  <div class="text-center mt-5 mb-5">
     <a class="btn rounded-5 py-2 px-4 bg-yellow text-blue fw-bold fs-md">
       Lihat Semua Berita
     </a>
@@ -130,8 +130,58 @@
 </div>
 
 {{-- Bidang-Bidang Kami --}}
-<div>
+<div class="py-5 bg-grey">
+  <div class="text-center">
+    <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+      BERITA TERBARU
+    </p>
 
+    <h1 class="fs-lg fw-bold mt-3 mb-5">
+      SEPUTAR PUPR SAMARINDA
+    </h1>
+  </div>
+
+  <div class="mx-3 row">
+    <?php for ($i = 0; $i < 6; $i++) { ?>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 rounded-4 border-0 shadow mx-1">
+          <a href="" class="text-decoration-none">
+            <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
+              <p class="text-center m-0 fw-bold">
+                <small>
+                  UPTD Pemeliharaan Saluran Drainase dan Irigasi
+                </small>
+              </p>
+            </div>
+          </a>
+          
+          <a href="" class="text-decoration-none text-black">
+            <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
+
+            <div class="card-body d-flex align-items-start flex-column">
+              <h5 class="card-title fw-bold mb-0">
+                Penandatanganan Kontrak Rehabilitasi dan Renovasi Stadion
+              </h5>
+
+              <p class="card-text">
+                <small>
+                  Sabtu, 18 Mei 2023
+                </small>
+              </p>
+
+              <p class="card-text">
+                Dinas Pekerjaan Umum dan Penataan Ruang Kota Samarinda bersama dengan Komisi...
+              </p>
+
+              <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
+                Selengkapnya
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
 </div>
 
 @endsection
