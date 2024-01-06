@@ -16,7 +16,7 @@
 
       {{-- Jam --}}
       <div class="d-flex justify-content-end align-items-center">
-        <p class="m-0 fw-bold">5 Januari 2024 | 11:01:10 WITA</p>
+        <p class="m-0 fw-bold" id="current-time"></p>
       </div>
     </div>
   </div>
