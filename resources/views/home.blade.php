@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    {{-- Teks Sambutan --}}
+    {{-- Teks Sambut --}}
     <div class="ms-5 my-auto" style="width: 40%">
       <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
         SAMBUTAN
