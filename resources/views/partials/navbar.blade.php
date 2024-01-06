@@ -44,7 +44,7 @@
                 <li><a class="dropdown-item" href="#">Profil Kepala</a></li>
                 <li><a class="dropdown-item" href="#">Riwayat Pimpinan</a></li>
                 <li><a class="dropdown-item" href="#">Sejarah Kota Samarinda</a></li>
-                <li><a class="dropdown-item" href="#">Sejarah PUPR Kota Samarinda</a></li>
+                <li><a class="dropdown-item" href="#">Sejarah DPUPR Kota Samarinda</a></li>
                 <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
                 <li><a class="dropdown-item" href="#">Tugas Pokok dan Fungsi</a></li>
                 <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>

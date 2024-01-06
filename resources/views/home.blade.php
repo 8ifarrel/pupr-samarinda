@@ -76,7 +76,7 @@
     </p>
 
     <h1 class="fs-lg fw-bold mt-3 mb-5">
-      SEPUTAR PUPR SAMARINDA
+      SEPUTAR DPUPR SAMARINDA
     </h1>
   </div>
 
