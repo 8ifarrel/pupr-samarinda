@@ -1,6 +1,6 @@
-<div style="font-size: var(--fs-md);">
+<div class="fs-md">
   <div class="my-3" style="margin-right: 100px; margin-left: 100px">
-    <div class="d-flex justify-content-between container-fluid" style="color: var(--blue);">
+    <div class="d-flex justify-content-between container-fluid text-blue">
       {{-- Logo --}}
       <div class="d-flex justify-content-start">
         <a class="pe-2" href="#">
@@ -16,13 +16,13 @@
 
       {{-- Jam --}}
       <div class="d-flex justify-content-end align-items-center">
-        <p class="m-0 fw-bold">5 Januari 2024 | 11:01:10 WITA</p>
+        <p class="m-0 fw-bold fs-md" id="current-time"></p>
       </div>
     </div>
   </div>
 
   {{-- Menu navbar --}}
-  <nav class="navbar navbar-expand-lg" style="background-color: var(--blue)">
+  <nav class="navbar navbar-expand-lg bg-blue">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -119,7 +119,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link btn fw-bold rounded-4 py-2 px-4" style="background-color: var(--yellow); color: var(--blue);">
+            <a class="nav-link btn fw-bold rounded-4 py-2 px-4 bg-yellow text-blue">
               Pelayanan 
             </a>
           </li>
