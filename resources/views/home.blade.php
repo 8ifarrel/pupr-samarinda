@@ -129,7 +129,7 @@
   </div>
 </div>
 
-{{-- Bidang-Bidang Kami --}}
+{{-- Bidang-Bidang Kam --}}
 <div>
 
 </div>
