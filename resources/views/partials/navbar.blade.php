@@ -4,10 +4,10 @@
       {{-- Logo --}}
       <div class="d-flex justify-content-start">
         <a class="pe-2" href="#">
-          <img src="assets/img/kota-samarinda.png" alt="kota-samarinda" style="width: 54px">
+          <img src="assets/logo/kota-samarinda.png" alt="kota-samarinda" style="width: 54px">
         </a>
         <a class="pe-2" href="#">
-          <img src="assets/img/dpupr-kota-samarinda.png" alt="dpupr-kota-samarinda" style="height: 54px">
+          <img src="assets/logo/dpupr-kota-samarinda.png" alt="dpupr-kota-samarinda" style="height: 54px">
         </a>
         <p class="fw-bold m-0">
           DINAS PEKERJAAN UMUM DAN <br> PENATAAN RUANG KOTA SAMARINDA

@@ -27,7 +27,7 @@
     {{-- Biodata Kepala Dinas --}} 
     <div style="width: 625px; height: 608px;">
       <div class="d-flex justify-content-end">
-        <img src="assets/img/dot.svg" alt="" class="position-absolute">
+        <img src="assets/element/dots.svg" alt="" class="position-absolute">
       </div>
 
       <div class="d-flex justify-content-center flex-row z-3" style="padding-top: 2rem;">
@@ -144,16 +144,23 @@
   <div class="mx-3 row d-flex justify-content-center">
     <?php for ($i = 0; $i < 10; $i++) { ?>
       <div class="col-md-3 mb-4">
-        <div class="card h-100 rounded-4 border-0 shadow mx-1">
+        <div class="card rounded-4 border-0 shadow mx-1">
           <a href="" class="text-decoration-none text-black">
-
             <div class="card-body d-flex align-items-start flex-column">
+              <div class="mx-auto my-4">
+                <img src="assets/logo/struktur-organisasi/uptd-jalan-dan-jembatan.png" alt="" style="height: 62px" class="position-absolute">
+
+                <img src="assets/element/dot.svg" alt="" class="">
+              </div>
+
               <h5 class="card-title fw-semibold mb-4 text-center">
                 UPTD JALAN DAN JEMBATAN
               </h5>
 
               <p class="card-text text-center">
-                Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
+                {{-- <small> --}}
+                  Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
+                {{-- </small> --}}
               </p>
 
               <div class="mx-auto">
