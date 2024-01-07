@@ -1,0 +1,19 @@
+.navbar {
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s ease-out;
+}
+
+.navbar-scrolled {
+  background-color: white !important;
+  color: var(--blue) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.35s, color 0.35s, box-shadow 0.35s ease-in;
+}
+
+.navbar-scrolled .navbar-nav .nav-link {
+  color: var(--blue) !important;
+}
+
+.navbar-scrolled .navbar-toggler-icon {
+  background-color: var(--blue) !important;
+}
+

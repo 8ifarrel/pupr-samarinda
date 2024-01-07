@@ -61,9 +61,9 @@
         Kami menampilkan informasi dalam bentuk Pelayanan E-Goverment sehingga seluruh masyarakat dapat mengakses data terkait perdagangan.
       </p>
 
-      <a class="btn rounded-5 py-2 px-4 bg-yellow text-blue fw-bold fs-md">
+      <button class="btn rounded-5 py-2 px-4 bg-yellow text-blue fw-bold fs-md">
         Lihat Profil Selengkapnya
-      </a>
+      </button>
     </div>
   </div>
 </div>
@@ -123,9 +123,9 @@
   </div>
 
   <div class="text-center mt-5 mb-5">
-    <a class="btn rounded-5 py-2 px-4 bg-yellow text-blue fw-bold fs-md">
+    <button class="btn rounded-5 py-2 px-4 bg-yellow text-blue fw-bold fs-md">
       Lihat Semua Berita
-    </a>
+    </button>
   </div>
 </div>
 
@@ -152,19 +152,21 @@
 
                 <img src="assets/element/dot.svg" alt="" class="">
               </div>
-
-              <h5 class="card-title fw-semibold mb-4 text-center">
-                UPTD JALAN DAN JEMBATAN
-              </h5>
-
-              <p class="card-text text-center">
-                {{-- <small> --}}
-                  Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
-                {{-- </small> --}}
-              </p>
+              
+              <div class="mx-auto">
+                <h5 class="card-title fw-semibold mb-4 text-center">
+                  BIDANG PERTAHANAN
+                </h5>
+              </div>
 
               <div class="mx-auto">
-                <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold">
+                <p class="card-text text-center">
+                    Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
+                </p>
+              </div>
+
+              <div class="mx-auto">
+                <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                   Selengkapnya
                 </p>
               </div>
