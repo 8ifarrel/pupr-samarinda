@@ -69,7 +69,7 @@ small {
     font-size: 50px;
 }
 
-/* Horizontal line */
+/* Horizontal line di sebelah teks */
 
 .horizontal-blue::after {
     content: url("assets/element/horizontal-line.svg");
@@ -82,43 +82,12 @@ small {
 }
 
 .horizontal-yellow::after {
-    content: url("assets/element/horizontal-line.svg");
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 0.4rem;
-    width: 50px;
-    height: 2px;
-    background-color: var(--yellow);
-}
+  content: url('assets/element/horizontal-line.svg');
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  width: 50px;
+  height: 2px;
+  background-color: var(--yellow);
 
-.btn {
-    transition: 0.2s ease-in-out;
-    /* border-width: 2px; */
-    background-color: var(--yellow);
-    color: var(--blue);
-    font: 18px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    padding: 20px 50px;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--blue);
-    z-index: -1;
-    clip-path: circle(0% at 50% 50%);
-    transition: 0.5s ease-in-out;
-}
-
-.btn:hover {
-    color: var(--yellow);
-    /* border-color: var(--yellow); */
-}
-
-.btn:hover::before {
-    clip-path: circle(100% at 50% 50%);
 }
