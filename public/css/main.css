@@ -70,7 +70,7 @@ small {
   font-size: 50px;
 }
 
-/* Horizontal line */
+/* Horizontal line di sebelah teks */
 
 .horizontal-blue::after {
   content: url('assets/element/horizontal-line.svg');
@@ -90,5 +90,15 @@ small {
   width: 50px;
   height: 2px;
   background-color: var(--yellow);
+}
 
+
+/* Card hover  */
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }

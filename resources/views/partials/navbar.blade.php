@@ -52,12 +52,6 @@
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">
-              SKM
-            </a>
-          </li>
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Informasi Dinas
@@ -103,10 +97,26 @@
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+          <li class="nav-item dropdown me-2">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SKM
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">LAPOR!</a></li>
+              <li><a class="dropdown-item" href="#">Kuesioner Survei Kepuasan Masyarakat</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown me-2">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Program
             </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Aplikasi Hantu Banyu</a></li>
+              <li><a class="dropdown-item" href="#">Aplikasi UPTD Limbah</a></li>
+              <li><a class="dropdown-item" href="#">Aplikasi Parit</a></li>
+              <li><a class="dropdown-item" href="#">Aplikasi UPTD Jalan</a></li>
+            </ul>
           </li>
 
           <li class="nav-item dropdown me-2">
@@ -116,6 +126,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Galeri</a></li>
               <li><a class="dropdown-item" href="#">Video</a></li>
+              <li><a class="dropdown-item" href="#">Infografis</a></li>
             </ul>
           </li>
 
