@@ -17,7 +17,8 @@
   
   <link rel="stylesheet" href="css/calendar.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/navbar.css"> 
+  <!-- ayam -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
 </head>
