@@ -93,9 +93,9 @@
     </h1>
   </div>
 
-  <div class="mx-3 row">
+  <div class="mx-3 row" >
     <?php for ($i = 0; $i < 6; $i++) { ?>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
         <div class="card h-100 rounded-4 border-0 shadow mx-1">
           <a href="" class="text-decoration-none">
             <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
@@ -157,7 +157,7 @@
   <div class="mx-3 row d-flex justify-content-center">
     <?php for ($i = 0; $i < 10; $i++) { ?>
       <div class="col-md-3 mb-4">
-        <div class="card rounded-4 border-0 shadow mx-1">
+        <div class="card rounded-4 border-0 shadow mx-1" data-aos="fade-up" data-aos-duration="1500">
           <a href="" class="text-decoration-none text-black">
             <div class="card-body d-flex align-items-start flex-column">
               <div class="mx-auto my-4">
