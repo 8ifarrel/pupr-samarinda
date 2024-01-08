@@ -4,17 +4,27 @@
 {{-- Gambar Slide --}}
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
+    {{-- <div class="carousel-item active" data-bs-interval="2000">
       <img src="/assets/temp/slide_1.jpg" class="d-block w-100" alt="...">
     </div>
+
     <div class="carousel-item" data-bs-interval="2000">
       <img src="/assets/temp/slide_2.jpg" class="d-block w-100" alt="...">
+    </div> --}}
+
+    <div class="carousel-item active" data-bs-interval="2000">
+      <div class="position-relative">
+        <img src="/assets/img/slides/slide_3.jpg" class="d-block w-100" alt="..." style="filter: brightness(60%);">
+        <div class="position-absolute"><p class="text-yellow">INI TULISAN GEDE</p></div>
+      </div>
     </div>
   </div>
+
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
+
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
@@ -64,10 +74,9 @@
           Kami menampilkan informasi dalam bentuk Pelayanan E-Goverment sehingga seluruh masyarakat dapat mengakses data terkait perdagangan.
         </p>
 
-        <button class="btn rounded-5 py-2 px-4 fw-bold fs-md ">
-          Lihat Profil Selengkapnya
-        </button>
-      </div>
+      <button class="btn rounded-5 py-2 px-4 bg-yellow text-blue fw-bold fs-md">
+        Lihat Profil Selengkapnya
+      </button>
     </div>
   </div>
 </div>
