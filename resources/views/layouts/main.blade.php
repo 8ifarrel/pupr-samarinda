@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="css/calendar.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 </head>
 <body>
   @include('partials.navbar')
@@ -33,5 +35,9 @@
   <script src="js/calendar.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/time.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

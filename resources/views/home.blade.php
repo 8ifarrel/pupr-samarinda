@@ -24,46 +24,50 @@
 {{-- Sambutan Kepala Dinas --}}
 <div class="p-5 bg-grey">
   <div class="p-4 d-flex">
-    {{-- Biodata Kepala Dinas --}} 
-    <div style="width: 625px; height: 608px;">
-      <div class="d-flex justify-content-end">
-        <img src="assets/element/dots.svg" alt="" class="position-absolute">
-      </div>
-
-      <div class="d-flex justify-content-center flex-row z-3" style="padding-top: 2rem;">
-        <div class="rounded-start-pill bg-blue z-3" style="width: 530px !important;">
-            <img src="assets/temp/desy-damayanti-st-mt.png" alt="" style="width: 530px; height: 530px;" class="rounded-top-pill bg-blue">
+    {{-- Biodata Kepala Dinas --}}
+    <div data-aos="fade-right" data-aos-duration="1500">
+      <div style="width: 625px; height: 608px;">
+        <div class="d-flex justify-content-end">
+          <img src="assets/element/dots.svg" alt="" class="position-absolute">
         </div>
-      </div>
 
-      <div class="shadow py-2 bg-white rounded-4">
-        <p class="fw-extrabold text-center m-0 fs-md">
-          DESY DAMAYANTI S.T., M.T.
-        </p>
+        <div class="d-flex justify-content-center flex-row z-3" style="padding-top: 2rem;">
+          <div class="rounded-start-pill bg-blue z-3" style="width: 530px !important;">
+            <img src="assets/temp/desy-damayanti-st-mt.png" alt="" style="width: 530px; height: 530px;" class="rounded-top-pill bg-blue">
+          </div>
+        </div>
 
-        <p class="fw-semibold text-center m-0 fs-md">
-          Kepala Dinas Pekerjaan Umum dan Penataan Ruang Kota Samarinda
-        </p>
+        <div class="shadow py-2 bg-white rounded-4">
+          <p class="fw-extrabold text-center m-0 fs-md">
+            DESY DAMAYANTI S.T., M.T.
+          </p>
+
+          <p class="fw-semibold text-center m-0 fs-md">
+            Kepala Dinas Pekerjaan Umum dan Penataan Ruang Kota Samarinda
+          </p>
+        </div>
       </div>
     </div>
 
     {{-- Teks Sambutan --}}
-    <div class="ms-5 my-auto" style="width: 40%">
-      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-        SAMBUTAN
-      </p>
+    <div data-aos="fade-left" data-aos-duration="1500">
+      <div class="ms-5 my-auto" style="width: 40%">
+        <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+          SAMBUTAN
+        </p>
 
-      <h1 class="fs-lg fw-bold my-3">
-        SAMBUTAN KEPALA DINAS
-      </h1>
+        <h1 class="fs-lg fw-bold my-3">
+          SAMBUTAN KEPALA DINAS
+        </h1>
 
-      <p class="fs-md">
-        Kami menampilkan informasi dalam bentuk Pelayanan E-Goverment sehingga seluruh masyarakat dapat mengakses data terkait perdagangan.
-      </p>
+        <p class="fs-md">
+          Kami menampilkan informasi dalam bentuk Pelayanan E-Goverment sehingga seluruh masyarakat dapat mengakses data terkait perdagangan.
+        </p>
 
-      <button class="btn rounded-5 py-2 px-4 bg-yellow text-blue fw-bold fs-md">
-        Lihat Profil Selengkapnya
-      </button>
+        <button class="btn rounded-5 py-2 px-4 fw-bold fs-md ">
+          Lihat Profil Selengkapnya
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -93,7 +97,7 @@
               </p>
             </div>
           </a>
-          
+
           <a href="" class="text-decoration-none text-black">
             <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
 
@@ -152,7 +156,7 @@
 
                 <img src="assets/element/dot.svg" alt="" class="">
               </div>
-              
+
               <div class="mx-auto">
                 <h5 class="card-title fw-semibold mb-4 text-center">
                   BIDANG PERTAHANAN
@@ -161,7 +165,7 @@
 
               <div class="mx-auto">
                 <p class="card-text text-center">
-                    Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
+                  Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
                 </p>
               </div>
 

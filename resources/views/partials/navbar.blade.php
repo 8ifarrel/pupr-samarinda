@@ -120,9 +120,9 @@
           </li>
 
         <li class="nav-item">
-          <a class="nav-link btn fw-bold rounded-4 py-2 px-4 bg-yellow text-blue">
+          <button class="btn fw-bold rounded-4 py-2 px-4 ">
             Pelayanan 
-          </a>
+          </button>
         </li>
       </ul>
     </div>
