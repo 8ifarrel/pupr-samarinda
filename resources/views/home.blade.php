@@ -78,7 +78,7 @@
   </div>
 </div>
 
-{{-- Berita Terbaru --}}
+{{-- Berita Terbaruu --}}
 <div class="container mt-5">
   <div class="text-center">
     <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
