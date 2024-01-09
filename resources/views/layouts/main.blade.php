@@ -49,6 +49,8 @@
   <script src="js/calendar.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/time.js"></script>
+  <!-- <script src="js/chat.js"></script> -->
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

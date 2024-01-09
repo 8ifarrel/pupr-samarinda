@@ -74,7 +74,7 @@
         <hr class="solid m-1">
         
         <div>
-          <p class="m-0 pb-1"><a href="https://www.instagram.com/" class="mt-auto text-decoration-none text-black"><i class="bi bi-instagram"></i>
+          <p class="m-0 pb-1"><a href="https://www.instagram.com/dpuprkotasamarinda/" class="mt-auto text-decoration-none text-black"><i class="bi bi-instagram"></i>
               <small>Instagram</small></a>
           </p>
 
