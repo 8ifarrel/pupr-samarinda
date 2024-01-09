@@ -1,35 +1,35 @@
 :root {
-  --yellow: rgba(252, 183, 23, 1);
-  --blue: rgba(34, 52, 104, 1);
-  --grey: rgba(240, 240, 240, 1);
+    --yellow: rgba(252, 183, 23, 1);
+    --blue: rgba(34, 52, 104, 1);
+    --grey: rgba(240, 240, 240, 1);
 }
 
 /* Background color */
 
 .bg-yellow {
-  background-color: var(--yellow);
+    background-color: var(--yellow);
 }
 
 .bg-blue {
-  background-color: var(--blue);
+    background-color: var(--blue);
 }
 
 .bg-grey {
-  background-color: var(--grey);
+    background-color: var(--grey);
 }
 
 /* Text color */
 
 .text-yellow {
-  color: var(--yellow);
+    color: var(--yellow);
 }
 
 .text-blue {
-  color: var(--blue);
+    color: var(--blue);
 }
 
 .text-grey {
-  color: var(--grey);
+    color: var(--grey);
 }
 
 /* Font */
@@ -38,48 +38,47 @@ p,
 h1,
 h5,
 small {
-  font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 /* Font weight */
 
 .fw-semibold {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .fw-extrabold {
-  font-weight: 800;
+    font-weight: 800;
 }
-
 
 /* Font size */
 
 .fs-default {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .fs-md {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .fs-lg {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 .fs-xl {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 /* Horizontal line di sebelah teks */
 
 .horizontal-blue::after {
-  content: url('assets/element/horizontal-line.svg');
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.4rem;
-  width: 50px;
-  height: 2px;
-  background-color: var(--blue);
+    content: url("assets/element/horizontal-line.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue);
 }
 
 .horizontal-yellow::after {
@@ -92,7 +91,6 @@ small {
   background-color: var(--yellow);
 }
 
-
 /* Card hover  */
 
 .card {
@@ -101,4 +99,37 @@ small {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+/* Button hover */
+
+.btn {
+  transition: 0.2s ease-in-out;
+  background-color: var(--yellow);
+  color: var(--blue);
+  font: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 20px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--blue);
+  z-index: -1;
+  clip-path: circle(0% at 50% 50%);
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--yellow);
+  /* border-color: var(--yellow); */
+}
+
+.btn:hover::before {
+  clip-path: circle(100% at 50% 50%);
 }
