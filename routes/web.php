@@ -17,7 +17,7 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', [HomeController::class, 'main']);
-Route::get('/time', [HomeController::class, 'getTime']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -30,3 +30,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
