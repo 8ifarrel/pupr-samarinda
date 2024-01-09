@@ -127,7 +127,6 @@ small {
 
 .btn:hover {
   color: var(--yellow);
-  /* border-color: var(--yellow); */
 }
 
 .btn:hover::before {
