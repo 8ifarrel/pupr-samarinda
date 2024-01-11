@@ -15,9 +15,9 @@
         <div class="carousel-caption d-flex justify-content-center flex-column h-100">
           <h1 class="fw-bold fs-xl pb-2">Website Resmi Dinas Pekerjaan Umum dan Penantaan Ruang Kota Samarinda</h1>
           <p class="fs-md">Selamat datang di website Dinas Pekerjaan Umum dan Penantaan Ruang Kota Samarinda, tempat
-           
+
             informasi mengenai pembangunan, pemeliharaan, dan pengelolaan infrastruktur, serta tata ruang dan pengawasan
-           
+
             bangunan di wilayah Kota Samarinda.</p>
         </div>
       </div>
@@ -48,7 +48,6 @@
         <div class="d-flex justify-content-center flex-row z-3" style="padding-top: 2rem;">
           <div class="rounded-start-pill bg-blue z-3" style="width: 530px !important;">
             <img src="assets/temp/desy-damayanti-st-mt.png" alt="" style="width: 530px; height: 530px;"
-             
               class="rounded-top-pill bg-blue">
           </div>
         </div>
@@ -67,108 +66,108 @@
 
     {{-- Teks Sambutan --}}
     <div class="ms-5 my-auto" style="width: 40%" data-aos="fade-left" data-aos-duration="1500">
-    <div class="ms-5 my-auto" style="width: 40%" data-aos="fade-left" data-aos-duration="1500">
-      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-        SAMBUTAN
-      </p>
+      <div class="ms-5 my-auto" style="width: 40%" data-aos="fade-left" data-aos-duration="1500">
+        <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+          SAMBUTAN
+        </p>
 
-      <h1 class="fs-lg fw-bold my-3">
-        SAMBUTAN KEPALA DINAS
-      </h1>
+        <h1 class="fs-lg fw-bold my-3">
+          SAMBUTAN KEPALA DINAS
+        </h1>
 
-      <p class="fs-md">
-        Kami menampilkan informasi dalam bentuk Pelayanan E-Goverment sehingga seluruh masyarakat dapat mengakses data
-       
-        terkait perdagangan.
-      </p>
+        <p class="fs-md">
+          Kami menampilkan informasi dalam bentuk Pelayanan E-Goverment sehingga seluruh masyarakat dapat mengakses data
 
-      <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
-        Lihat Profil Selengkapnya
-      </button>
-    </div>
-  </div>
-</div>
+          terkait perdagangan.
+        </p>
 
-{{-- Berita Terbaru --}}
-<div class="container mt-5">
-  <div class="text-center">
-    <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-      BERITA TERBARU
-    </p>
-
-    <h1 class="fs-lg fw-bold mt-3 mb-5">
-      SEPUTAR DPUPR SAMARINDA
-    </h1>
-  </div>
-
-  <div class="mx-3 row">
-    @foreach ($berita as $item)
-    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
-      <div class="card card-hover h-100 rounded-4 border-0 shadow mx-1">
-        <a href="" class="text-decoration-none">
-          <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
-            <p class="text-center m-0 fw-bold">
-              <small>
-                {{ $item->kategori->label }}
-              </small>
-            </p>
-          </div>
-        </a>
-    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
-      <div class="card card-hover h-100 rounded-4 border-0 shadow mx-1">
-        <a href="" class="text-decoration-none">
-          <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
-            <p class="text-center m-0 fw-bold">
-              <small>
-                {{ $item->kategori->label }}
-              </small>
-            </p>
-          </div>
-        </a>
-
-        <a href="" class="text-decoration-none text-black">
-          <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
-        <a href="" class="text-decoration-none text-black">
-          <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
-
-          <div class="card-body d-flex align-items-start flex-column">
-            <h5 class="card-title fw-bold">
-              {{ $item->judul }}
-            </h5>
-          <div class="card-body d-flex align-items-start flex-column">
-            <h5 class="card-title fw-bold">
-              {{ $item->judul }}
-            </h5>
-
-            <p class="card-text">
-              {{ $item->tanggal }}
-            </p>
-            <p class="card-text">
-              {{ $item->tanggal }}
-            </p>
-
-            {{--
-            <p class="card-text">
-              {{ $item->excerpt }}
-            </p>
-            --}}
-            {{--
-            <p class="card-text">
-              {{ $item->excerpt }}
-            </p>
-            --}}
-
-            <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
-              Selengkapnya
-            </p>
-          </div>
-        </a>
+        <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
+          Lihat Profil Selengkapnya
+        </button>
       </div>
     </div>
-            <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
-              Selengkapnya
-            </p>
+  </div>
+
+  {{-- Berita Terbaru --}}
+  <div class="container mt-5">
+    <div class="text-center">
+      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+        BERITA TERBARU
+      </p>
+
+      <h1 class="fs-lg fw-bold mt-3 mb-5">
+        SEPUTAR DPUPR SAMARINDA
+      </h1>
+    </div>
+
+    <div class="mx-3 row">
+      @foreach ($berita as $item)
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="card card-hover h-100 rounded-4 border-0 shadow mx-1">
+          <a href="" class="text-decoration-none">
+            <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
+              <p class="text-center m-0 fw-bold">
+                <small>
+                  {{ $item->kategori->label }}
+                </small>
+              </p>
+            </div>
+          </a>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="card card-hover h-100 rounded-4 border-0 shadow mx-1">
+              <a href="" class="text-decoration-none">
+                <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
+                  <p class="text-center m-0 fw-bold">
+                    <small>
+                      {{ $item->kategori->label }}
+                    </small>
+                  </p>
+                </div>
+              </a>
+
+              <a href="" class="text-decoration-none text-black">
+                <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
+                <a href="" class="text-decoration-none text-black">
+                  <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
+
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title fw-bold">
+                      {{ $item->judul }}
+                    </h5>
+                    <div class="card-body d-flex align-items-start flex-column">
+                      <h5 class="card-title fw-bold">
+                        {{ $item->judul }}
+                      </h5>
+
+                      <p class="card-text">
+                        {{ $item->tanggal }}
+                      </p>
+                      <p class="card-text">
+                        {{ $item->tanggal }}
+                      </p>
+
+                      {{--
+                      <p class="card-text">
+                        {{ $item->excerpt }}
+                      </p>
+                      --}}
+                      {{--
+                      <p class="card-text">
+                        {{ $item->excerpt }}
+                      </p>
+                      --}}
+
+                      <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
+                        Selengkapnya
+                      </p>
+                    </div>
+                </a>
+            </div>
           </div>
+          <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
+            Selengkapnya
+          </p>
+        </div>
         </a>
       </div>
     </div>
@@ -203,61 +202,61 @@
             <div class="mx-auto my-4">
               <img src="assets/logo/struktur-organisasi/uptd-jalan-dan-jembatan.png" alt="" style="height: 62px"
                 class="position-absolute">
-    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
-      <div class="card card-hover rounded-4 border-0 shadow mx-1">
-        <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
-            <div class="mx-auto my-4">
-              <img src="assets/logo/struktur-organisasi/uptd-jalan-dan-jembatan.png" alt="" style="height: 62px"
-                class="position-absolute">
+              <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card card-hover rounded-4 border-0 shadow mx-1">
+                  <a href="" class="text-decoration-none text-black">
+                    <div class="card-body d-flex align-items-start flex-column">
+                      <div class="mx-auto my-4">
+                        <img src="assets/logo/struktur-organisasi/uptd-jalan-dan-jembatan.png" alt=""
+                          style="height: 62px" class="position-absolute">
 
-              <img src="assets/element/dot.svg" alt="" class="">
-            </div>
-              <img src="assets/element/dot.svg" alt="" class="">
-            </div>
+                        <img src="assets/element/dot.svg" alt="" class="">
+                      </div>
+                      <img src="assets/element/dot.svg" alt="" class="">
+                    </div>
 
-            <div class="mx-auto">
-              <h5 class="card-title fw-semibold mb-4 text-center">
-                BIDANG PERTAHANAN
-              </h5>
-            </div>
-            <div class="mx-auto">
-              <h5 class="card-title fw-semibold mb-4 text-center">
-                BIDANG PERTAHANAN
-              </h5>
-            </div>
+                    <div class="mx-auto">
+                      <h5 class="card-title fw-semibold mb-4 text-center">
+                        BIDANG PERTAHANAN
+                      </h5>
+                    </div>
+                    <div class="mx-auto">
+                      <h5 class="card-title fw-semibold mb-4 text-center">
+                        BIDANG PERTAHANAN
+                      </h5>
+                    </div>
 
-            <div class="mx-auto">
-              <p class="card-text text-center">
-                Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
-              </p>
-            </div>
-            <div class="mx-auto">
-              <p class="card-text text-center">
-                Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
-              </p>
-            </div>
+                    <div class="mx-auto">
+                      <p class="card-text text-center">
+                        Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
+                      </p>
+                    </div>
+                    <div class="mx-auto">
+                      <p class="card-text text-center">
+                        Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
+                      </p>
+                    </div>
 
-            <div class="mx-auto">
-              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
-                Selengkapnya
-              </p>
-            </div>
-          </div>
+                    <div class="mx-auto">
+                      <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                        Selengkapnya
+                      </p>
+                    </div>
+                </div>
         </a>
       </div>
     </div>
-            <div class="mx-auto">
-              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
-                Selengkapnya
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
+    <div class="mx-auto">
+      <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+        Selengkapnya
+      </p>
     </div>
-    <?php } ?>
   </div>
+  </a>
+</div>
+</div>
+<?php } ?>
+</div>
 </div>
 
 {{-- Agenda Kegiatan --}}
@@ -274,7 +273,6 @@
 
   <div class="d-flex justify-content-between w-75 mx-auto mb-3">
     <div class="border rounded-4"
-     
       style="background-color: rgba(113, 113, 113, 0.30); border-color: rgba(22, 21, 108, 0.50) !important;">
       <p class="fs-md fw-extrabold text-blue px-3 py-2 mb-0" id="current-agenda"></p>
     </div>
