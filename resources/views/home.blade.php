@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
+
 {{-- Gambar Slide --}}
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -14,7 +15,9 @@
         <div class="carousel-caption d-flex justify-content-center flex-column h-100">
           <h1 class="fw-bold fs-xl pb-2">Website Resmi Dinas Pekerjaan Umum dan Penantaan Ruang Kota Samarinda</h1>
           <p class="fs-md">Selamat datang di website Dinas Pekerjaan Umum dan Penantaan Ruang Kota Samarinda, tempat
+           
             informasi mengenai pembangunan, pemeliharaan, dan pengelolaan infrastruktur, serta tata ruang dan pengawasan
+           
             bangunan di wilayah Kota Samarinda.</p>
         </div>
       </div>
@@ -45,6 +48,7 @@
         <div class="d-flex justify-content-center flex-row z-3" style="padding-top: 2rem;">
           <div class="rounded-start-pill bg-blue z-3" style="width: 530px !important;">
             <img src="assets/temp/desy-damayanti-st-mt.png" alt="" style="width: 530px; height: 530px;"
+             
               class="rounded-top-pill bg-blue">
           </div>
         </div>
@@ -63,6 +67,7 @@
 
     {{-- Teks Sambutan --}}
     <div class="ms-5 my-auto" style="width: 40%" data-aos="fade-left" data-aos-duration="1500">
+    <div class="ms-5 my-auto" style="width: 40%" data-aos="fade-left" data-aos-duration="1500">
       <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
         SAMBUTAN
       </p>
@@ -73,6 +78,7 @@
 
       <p class="fs-md">
         Kami menampilkan informasi dalam bentuk Pelayanan E-Goverment sehingga seluruh masyarakat dapat mengakses data
+       
         terkait perdagangan.
       </p>
 
@@ -108,7 +114,20 @@
             </p>
           </div>
         </a>
+    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card card-hover h-100 rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none">
+          <div class="py-2 px-3 text-white rounded-top-4 bg-blue">
+            <p class="text-center m-0 fw-bold">
+              <small>
+                {{ $item->kategori->label }}
+              </small>
+            </p>
+          </div>
+        </a>
 
+        <a href="" class="text-decoration-none text-black">
+          <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
         <a href="" class="text-decoration-none text-black">
           <img src="https://source.unsplash.com/540x300?Irigasi" class="card-img-top rounded-0" alt="">
 
@@ -116,7 +135,14 @@
             <h5 class="card-title fw-bold">
               {{ $item->judul }}
             </h5>
+          <div class="card-body d-flex align-items-start flex-column">
+            <h5 class="card-title fw-bold">
+              {{ $item->judul }}
+            </h5>
 
+            <p class="card-text">
+              {{ $item->tanggal }}
+            </p>
             <p class="card-text">
               {{ $item->tanggal }}
             </p>
@@ -126,7 +152,19 @@
               {{ $item->excerpt }}
             </p>
             --}}
+            {{--
+            <p class="card-text">
+              {{ $item->excerpt }}
+            </p>
+            --}}
 
+            <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
+              Selengkapnya
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
             <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
               Selengkapnya
             </p>
@@ -165,10 +203,24 @@
             <div class="mx-auto my-4">
               <img src="assets/logo/struktur-organisasi/uptd-jalan-dan-jembatan.png" alt="" style="height: 62px"
                 class="position-absolute">
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets/logo/struktur-organisasi/uptd-jalan-dan-jembatan.png" alt="" style="height: 62px"
+                class="position-absolute">
 
               <img src="assets/element/dot.svg" alt="" class="">
             </div>
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
 
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                BIDANG PERTAHANAN
+              </h5>
+            </div>
             <div class="mx-auto">
               <h5 class="card-title fw-semibold mb-4 text-center">
                 BIDANG PERTAHANAN
@@ -180,7 +232,21 @@
                 Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
               </p>
             </div>
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Melaksanakan kegiatan teknis operasional khususnya pemeliharaan jalan dan jembatan.
+              </p>
+            </div>
 
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
             <div class="mx-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
@@ -208,6 +274,7 @@
 
   <div class="d-flex justify-content-between w-75 mx-auto mb-3">
     <div class="border rounded-4"
+     
       style="background-color: rgba(113, 113, 113, 0.30); border-color: rgba(22, 21, 108, 0.50) !important;">
       <p class="fs-md fw-extrabold text-blue px-3 py-2 mb-0" id="current-agenda"></p>
     </div>
@@ -217,48 +284,89 @@
     <div class="card-body">
       <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic radio toggle button group">
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" {{
+          (intval(date('d'))===$tanggal_minggu_ini['senin']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio1">
-          <p class="m-0" id="senin"></p>
-          <p class="m-0">Senin</p>
+          <p class="m-0">
+            {{ $tanggal_minggu_ini['senin'] }}
+          </p>
+
+          <p class="m-0">
+            senin
+          </p>
           <img src="assets/element/dot-original.svg" alt="">
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" {{
+          (intval(date('d'))===$tanggal_minggu_ini['selasa']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio2">
-          <p class="m-0" id="selasa"></p>
-          <p class="m-0">Selasa</p>
+          <p class="m-0">
+            {{ $tanggal_minggu_ini['selasa'] }}
+          </p>
+
+          <p class="m-0">
+            Selasa
+          </p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" {{
+          (intval(date('d'))===$tanggal_minggu_ini['rabu']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio3">
-          <p class="m-0" id="rabu"></p>
-          <p class="m-0">Rabu</p>
+          <p class="m-0">
+            {{ $tanggal_minggu_ini['rabu'] }}
+          </p>
+
+          <p class="m-0">
+            Rabu
+          </p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" {{
+          (intval(date('d'))===$tanggal_minggu_ini['kamis']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio4">
-          <p class="m-0" id="kamis"></p>
-          <p class="m-0">Kamis</p>
+          <p class="m-0">
+            {{ $tanggal_minggu_ini['kamis'] }}
+          </p>
+
+          <p class="m-0">
+            Kamis
+          </p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" {{
+          (intval(date('d'))===$tanggal_minggu_ini['jumat']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio5">
-          <p class="m-0" id="jumat"></p>
-          <p class="m-0">Jumat</p>
+          <p class="m-0">
+            {{ $tanggal_minggu_ini['jumat'] }}
+          </p>
+
+          <p class="m-0">
+            Jumat
+          </p>
           <img src="assets/element/dot-original.svg" alt="">
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" {{
+          (intval(date('d'))===$tanggal_minggu_ini['sabtu']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio6">
-          <p class="m-0" id="sabtu"></p>
-          <p class="m-0">Sabtu</p>
+          <p class="m-0" id="sabtu">
+            {{ $tanggal_minggu_ini['sabtu'] }}
+          </p>
+
+          <p class="m-0">
+            Sabtu
+          </p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" {{
+          (intval(date('d'))===$tanggal_minggu_ini['minggu']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio7">
-          <p class="m-0" id="minggu"></p>
-          <p class="m-0">Minggu</p>
+          <p class="m-0" id="minggu">
+            {{ $tanggal_minggu_ini['minggu'] }}
+          </p>
+          <p class="m-0">
+            Minggu
+          </p>
         </label>
       </div>
     </div>

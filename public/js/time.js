@@ -34,14 +34,14 @@ setInterval(updateAgenda, 1000);
 
 // Tanggal pada Minggu ini
 var curr = new Date();
-var temp = curr.getDate() - curr.getDay();
-var senin = temp + 1;
-var selasa = temp + 2;
-var rabu = temp + 3;
-var kamis = temp + 4;
-var jumat = temp + 5;
-var sabtu = temp + 6;
-var minggu = temp + 7;
+var first = curr.getDate() - curr.getDay();
+var senin = first + 1;
+var selasa = first + 2;
+var rabu = first + 3;
+var kamis = first + 4;
+var jumat = first + 5;
+var sabtu = first + 6;
+var minggu = first + 7;
 
 document.getElementById("senin").innerHTML = senin;
 document.getElementById("selasa").innerHTML  = selasa;
