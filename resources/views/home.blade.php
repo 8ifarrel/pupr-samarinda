@@ -203,8 +203,7 @@
 
   <div class="d-flex justify-content-between w-75 mx-auto mb-3">
     <div class="border rounded-4" style="background-color: rgba(113, 113, 113, 0.30); border-color: rgba(22, 21, 108, 0.50) !important;">
-      <p class="fs-md fw-extrabold text-blue px-3 py-2 mb-0">
-        Januari 2024
+      <p class="fs-md fw-extrabold text-blue px-3 py-2 mb-0" id="current-agenda">
       </p>
     </div>
   </div>

@@ -16,3 +16,16 @@ function updateClock() {
 
 updateClock();
 setInterval(updateClock, 1000);
+
+function updateAgenda() {
+    var elementJam = document.getElementById("current-agenda");
+    var now = new Date();
+    var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+    var month = months[now.getMonth()];
+    var year = now.getFullYear();
+    var timeString = month + ' ' + year;
+    elementJam.innerText = timeString;
+}
+
+updateAgenda();
+setInterval(updateAgenda, 1000);
