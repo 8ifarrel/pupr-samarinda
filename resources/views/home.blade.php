@@ -203,9 +203,7 @@
 
   <div class="d-flex justify-content-between w-75 mx-auto mb-3">
     <div class="border rounded-4" style="background-color: rgba(113, 113, 113, 0.30); border-color: rgba(22, 21, 108, 0.50) !important;">
-      <p class="fs-md fw-extrabold text-blue px-3 py-2 mb-0">
-        Januari 2024
-      </p>
+      <p class="fs-md fw-extrabold text-blue px-3 py-2 mb-0" id="current-agenda"></p>
     </div>
   </div>
 
@@ -214,46 +212,46 @@
       <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic radio toggle button group">
         
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio1">
-          <p class="m-0">1</p>
+        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio1" >
+          <p class="m-0" id="senin"></p>
           <p class="m-0">Senin</p>
           <img src="assets/element/dot-original.svg" alt="">
         </label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio2">
-          <p class="m-0">2</p>
+          <p class="m-0" id="selasa"></p>
           <p class="m-0">Selasa</p>
         </label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio3">
-          <p class="m-0">3</p>
+          <p class="m-0" id="rabu"></p>
           <p class="m-0">Rabu</p>
         </label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio4">
-          <p class="m-0">4</p>
+          <p class="m-0" id="kamis"></p>
           <p class="m-0">Kamis</p>
         </label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio5">
-          <p class="m-0">5</p>
+          <p class="m-0" id="jumat"></p>
           <p class="m-0">Jumat</p>
           <img src="assets/element/dot-original.svg" alt="">
         </label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio6">
-          <p class="m-0">6</p>
+          <p class="m-0" id="sabtu"></p>
           <p class="m-0">Sabtu</p>
         </label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio7">
-          <p class="m-0">7</p>
+          <p class="m-0" id="minggu"></p>
           <p class="m-0">Minggu</p>
         </label>
       </div>
