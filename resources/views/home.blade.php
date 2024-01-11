@@ -116,10 +116,12 @@
               <p class="card-text">
                 {{ $item->tanggal }}
               </p>
-{{-- 
+
+              {{-- 
               <p class="card-text">
                 {{ $item->excerpt }}
-              </p> --}}
+              </p>
+              --}}
 
               <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
                 Selengkapnya
@@ -200,29 +202,10 @@
   </div>
 
   <div class="d-flex justify-content-between w-75 mx-auto mb-3">
-    <div class="d-flex">
-      <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle rounded-4 fs-default fw-bold text-blue" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgba(113, 113, 113, 0.30); border-color: rgba(22, 21, 108, 0.50);">
-          Minggu ke-1
-        </a>
-      
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-
-      {{-- Range tanggal --}}
-      <p class="fw-bold mb-0 ms-3" style="font-size: 25px"> 
-        1 - 7 Januari 2024
+    <div class="border rounded-4" style="background-color: rgba(113, 113, 113, 0.30); border-color: rgba(22, 21, 108, 0.50) !important;">
+      <p class="fs-md fw-extrabold text-blue px-3 py-2 mb-0">
+        Januari 2024
       </p>
-    </div>
-
-    <div class="my-auto">
-      <button class="btn rounded-4 py-1 px-4 fw-bold bg-blue text-yellow">
-        Cari
-      </button>
     </div>
   </div>
 
