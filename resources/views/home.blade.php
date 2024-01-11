@@ -114,8 +114,12 @@
               </h5>
 
               <p class="card-text">
-                {{ $item->excerpt }}
+                {{ $item->tanggal }}
               </p>
+{{-- 
+              <p class="card-text">
+                {{ $item->excerpt }}
+              </p> --}}
 
               <p class="mt-3 mb-0 text-decoration-none text-blue fw-semibold horizontal-blue">
                 Selengkapnya
