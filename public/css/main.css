@@ -2,35 +2,51 @@
     --yellow: rgba(252, 183, 23, 1);
     --blue: rgba(34, 52, 104, 1);
     --grey: rgba(240, 240, 240, 1);
+    --red: red;
+
+    --yellow-70: rgba(252, 183, 23, 0.30);
+    --blue-18: rgba(34, 52, 104, 0.18);
 }
 
 /* Background color */
 
 .bg-yellow {
-    background-color: var(--yellow);
+    background-color: var(--yellow) !important;
 }
 
 .bg-blue {
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
 }
 
 .bg-grey {
-    background-color: var(--grey);
+    background-color: var(--grey) !important;
+}
+
+.bg-yellow-70 {
+    background-color: var(--yellow-70) !important;
+}
+
+.bg-blue-18 {
+    background-color: var(--blue-18) !important;
 }
 
 /* Text color */
 
 .text-yellow {
-    color: var(--yellow);
+    color: var(--yellow) !important;
 }
 
 .text-blue {
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 
 .text-grey {
-    color: var(--grey);
+    color: var(--grey) !important;
 }
+
+.text-red {
+    color: var(--red) !important;
+} 
 
 /* Font */
 
@@ -93,42 +109,48 @@ small {
 
 /* Card hover  */
 
-.card {
+.card-hover {
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card-hover:hover {
   transform: scale(1.05);
 }
 
 /* Button hover */
 
-.btn {
-  transition: 0.2s ease-in-out;
-  background-color: var(--yellow);
-  color: var(--blue);
-  font: 18px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  padding: 20px 50px;
-  position: relative;
-  overflow: hidden;
+button.btn {
+    transition: 0.2s ease-in-out;
+    background-color: var(--yellow);
+    color: var(--blue);
+    font: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 20px 50px;
+    position: relative;
+    overflow: hidden;
 }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--blue);
-  z-index: -1;
-  clip-path: circle(0% at 50% 50%);
-  transition: 0.5s ease-in-out;
+button.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--blue);
+    z-index: -1;
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.5s ease-in-out;
 }
 
-.btn:hover {
-  color: var(--yellow);
+button.btn:hover {
+    color: var(--yellow);
 }
 
-.btn:hover::before {
-  clip-path: circle(100% at 50% 50%);
+button.btn:hover::before {
+    clip-path: circle(100% at 50% 50%);
+}
+
+/* Radio checked */
+
+input[type='radio']:checked + label{
+  background-color: var(--yellow-70) !important;
 }

@@ -85,15 +85,11 @@
               PPID Pelaksana
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Audit Laporan Keuangan</a></li>
-              <li><a class="dropdown-item" href="#">Pengadaan Barang dan Jasa</a></li>
+              <li><a class="dropdown-item" href="#">Peraturan Keputusan dan Kebijakan</a></li>
+              <li><a class="dropdown-item" href="#">Dokumen SAKIP</a></li>
               <li><a class="dropdown-item" href="#">Informasi yang Wajib Disediakan dan Diumumkan Secara Berkala</a></li>
               <li><a class="dropdown-item" href="#">Informasi yang Wajib Diumumkan Secara Serta-merta</a></li>
               <li><a class="dropdown-item" href="#">Informasi yang Wajib Tersedia Setiap Saat</a></li>
-              <li><a class="dropdown-item" href="#">Laporan Kinerja 2022</a></li>
-              <li><a class="dropdown-item" href="#">Laporan Operasional 2022</a></li>
-              <li><a class="dropdown-item" href="#">Laporan Perubahan Ekuitas 2022</a></li>
-              <li><a class="dropdown-item" href="#">Laporan Realisasi Anggaran Pendapatan dan Belanja Daerah 2022</a></li>
             </ul>
           </li>
 

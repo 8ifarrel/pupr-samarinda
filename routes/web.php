@@ -16,13 +16,15 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', [HomeController::class, 'main']);
+// Halaman utama
+Route::get('/', [HomeController::class, 'main']); 
 
-
+// E-Panel (nanti)
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+// Edit akun
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
