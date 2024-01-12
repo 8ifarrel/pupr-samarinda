@@ -226,7 +226,7 @@
           </p>
 
           <p class="m-0">
-            senin
+            Senin
           </p>
           <img src="assets/element/dot-original.svg" alt="">
         </label>
@@ -306,6 +306,12 @@
     </div>
   </div>
 
+  <div class="w-75 mx-auto mt-4 mb-3 me-5">
+    <p class="m-0 text-blue fs-md">
+      Terdapat <span class="fw-bold">3 kegiatan</span>
+    </p>
+  </div>
+
   <div class="d-flex justify-content-center">
     {{-- Garis dan titik --}}
     <div class="d-flex flex-column me-4">
@@ -327,43 +333,113 @@
 
     {{-- Keterangan kegiatan --}}
     <div class="w-50">
-      <?php for ($i = 0; $i < 3; $i++) { ?>
-      <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
-        <div class="card-body">
-          <p class="fs-md mb-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quibusdam.
-          </p>
-
-          <div class="badge rounded-pill bg-blue shadow-md mb-2">
-            <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
-              <small>
-                UPTD Jalan dan Jembatan
-              </small>
+      @foreach ($agenda_kegiatan->take(3) as $item)
+        <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
+          <div class="card-body">
+            <p class="fs-md mb-2">
+              {{ $item->nama }}
             </p>
-          </div>
 
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="m-0">
+            <div class="badge rounded-pill bg-blue shadow-md mb-2">
+              <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
                 <small>
-                  09.30 - 10.45 WITA
+                  {{ $item->dihadiri_oleh }}
                 </small>
               </p>
             </div>
 
-            <div>
-              <p class="m-0 text-blue">
-                <small>
-                  Sedang berlangsung
-                </small>
-              </p>
+            <div class="d-flex justify-content-between">
+              <div>
+                <p class="m-0">
+                  <small>
+                    09.30 WITA
+                  </small>
+                </p>
+              </div>
+
+              <div class="d-flex">
+                <div class="my-auto">
+                  <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player>
+                </div>
+
+                <p class="m-0 text-blue">
+                  <small>
+                    Sedang berlangsung
+                  </small>
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      @endforeach
+    </div>
+  </div>
+
+  <div class="text-center mt-4 mb-5">
+    <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
+      Lihat Agenda Selengkapnya
+    </button>
+  </div>
+</div>
+
+{{-- Statistik Pengunjung --}}
+<div class="bg-grey py-5">
+  <div class="container">
+    <div class="text-center">
+      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+        STATISTIK
+      </p>
+
+      <h1 class="fs-lg fw-bold mt-3 mb-5">
+        STATISTIK PENGUNJUNG
+      </h1>
+    </div>
+
+    <div class="row w-75 mx-auto">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+                MINGGU INI
+              </h1>
+              <p class="card-text text-yellow fs-lg fw-bold text-center">
+                180
+              </p>
+          </div>
+        </div>
       </div>
-      <?php } ?>
+
+      <div class="col-sm-4">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              BULAN INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center">
+              2004
+            </p>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 rounded-4">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              TAHUN INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center">
+              180504
+            </p>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+{{-- Partner --}}
+<div class="py-5">
+
+</div>
 @endsection

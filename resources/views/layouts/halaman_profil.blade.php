@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dinas Pekerjaan Umum dan Penataan Ruang Kota Samarinda</title>
+  <title>Sejarah Samarinda | Dinas Pekerjaan Umum dan Penataan Ruang Kota Samarinda</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -26,8 +26,19 @@
 <body>
   @include('partials.navbar')
 
-  <div class="">
-    @yield('container')
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="/assets/img/samarinda-lawan.png" class="d-block w-100" alt="..." style="filter: brightness(35%);">
+
+        <div class="container">
+          <div class="carousel-caption d-flex justify-content-center flex-column h-100">
+            <h1 class="fw-bold fs-xl pb-2">PROFIL</h1>
+            <p class="fs-md">Sejarah Samarinda</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   @include('partials.footbar')

@@ -50,3 +50,5 @@ document.getElementById("kamis").innerHTML = kamis;
 document.getElementById("jumat").innerHTML = jumat;
 document.getElementById("sabtu").innerHTML = sabtu;
 document.getElementById("minggu").innerHTML  = minggu;
+
+// Tanggal yang dipilih pada agenda kegiatan
