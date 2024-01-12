@@ -19,6 +19,7 @@ use App\Http\Controllers\ProfileController;
 
 // Halaman utama
 Route::get('/', [HomeController::class, 'index']);
+// Route::get('/get-agendas/{date}', 'HomeController@getAgendas');
 
 // Halaman profil
 // Route::get('/profil/profil-kepala-dinas', [HalamanProfilController::class, 'profilKepalaDinas']);
