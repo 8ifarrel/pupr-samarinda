@@ -4,11 +4,11 @@
     <div class="me-4 w-25">
       <p class="mb-3">
         <a href="https://pupr.samarindakota.go.id/" class="me-2">
-          <img src="assets/logo/pupr.jpg" alt="" style="height: 70px">
+          <img src="{{ asset('assets/logo/pupr.jpg') }}" alt="" style="height: 70px">
         </a>
 
         <a href="https://samarindakota.go.id/">
-          <img src="assets/logo/kota-samarinda.png" alt="" style="width: 70px">
+          <img src="{{ asset('assets/logo/kota-samarinda.png') }}" alt="" style="width: 70px">
         </a>
       </p>
 

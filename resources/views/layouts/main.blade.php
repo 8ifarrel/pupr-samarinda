@@ -15,10 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/calendar.css">
-  <link rel="stylesheet" href="css/footbar.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/navbar.css"> 
+  <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/navbar.css') }}"> 
   <!-- ayam -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
@@ -53,9 +51,7 @@
     AOS.init();
   </script>
 
-  <script src="js/calendar.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/time.js"></script>
-  
+  <script src="{{ asset('js/navbar.js') }}"></script>
+  <script src="{{ asset('js/time.js') }}"></script>
 </body>
 </html>
