@@ -158,13 +158,237 @@
   </div>
 
   <div class="mx-3 row d-flex justify-content-center">
-    <?php for ($i = 0; $i < 10; $i++) { ?>
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
           <div class="card-body d-flex align-items-start flex-column">
             <div class="mx-auto my-4">
-              <img src="assets/logo/struktur-organisasi/uptd-jalan-dan-jembatan.png" alt="" style="height: 62px"
+              <img src="assets/logo/bidang/SEKRETARIAT.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                SEKRETARIAT
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Menyusun koordinasi penyusunan program, mengelola keuangan, kepegawaian kelengkapan kantor, dan
+                administrasi
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets/logo/bidang/JSA.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                SUMBER DAYA AIR
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Berfokus pada konservasi dan pengembangan sumber daya air.
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets/logo/bidang/BINAMARGA.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                BINA MARGA
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Berfokus pada perumusan dan pelaksanaan penyelenggaraan jalan.
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets/logo/bidang/CIPTAKARYA.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                CIPTA KARYA
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Berfokus pada pengembangan kawasan permukiman dan lingkungan.
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets/logo/bidang/TATARUANG.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                TATA RUANG
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets/logo/bidang/KONSTRUKSI.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                BINA KONSTRUKSI
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Mengawasi dan memanajemen konstruksi serta pembinaan jasa konstruksi.
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets/logo/bidang/PERTANAHAN.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                PERTANAHAN
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Membantu mengendalikan dan mengatur kebijakan teknis.
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets\logo\bidang\uptd-jalan-dan-jembatan.png" alt="" style="height: 62px"
                 class="position-absolute">
 
               <img src="assets/element/dot.svg" alt="" class="">
@@ -172,7 +396,7 @@
 
             <div class="mx-auto">
               <h5 class="card-title fw-semibold mb-4 text-center">
-                BIDANG PERTAHANAN
+                UPTD JALAN DAN JEMBATAN
               </h5>
             </div>
 
@@ -191,7 +415,71 @@
         </a>
       </div>
     </div>
-    <?php } ?>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets\logo\bidang\DRAINASE.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                UPTD PEMELIHARAAN SALURAN DRAINASE DAN IRIGASI
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                melaksanakan kegiatan teknis operasional hususnya pemeliharaan saluran drainase dan irigasi.
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card card-hover rounded-4 border-0 shadow mx-1">
+        <a href="" class="text-decoration-none text-black">
+          <div class="card-body d-flex align-items-start flex-column">
+            <div class="mx-auto my-4">
+              <img src="assets\logo\bidang\LIMBAH.png" alt="" style="height: 62px" class="position-absolute">
+
+              <img src="assets/element/dot.svg" alt="" class="">
+            </div>
+
+            <div class="mx-auto">
+              <h5 class="card-title fw-semibold mb-4 text-center">
+                UPTD PENGELOLAAN AIR LIMBAH DOMESTIK
+              </h5>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text text-center">
+                Mengelola dan penangan masalah air dan limbah
+              </p>
+            </div>
+
+            <div class="mx-auto">
+              <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
+                Selengkapnya
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -333,113 +621,120 @@
 
     {{-- Keterangan kegiatan --}}
     <div class="w-50">
-      @foreach ($agenda_kegiatan->take(3) as $item)
-        <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
-          <div class="card-body">
-            <p class="fs-md mb-2">
-              {{ $item->nama }}
-            </p>
-
-            <div class="badge rounded-pill bg-blue shadow-md mb-2">
-              <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
-                <small>
-                  {{ $item->dihadiri_oleh }}
-                </small>
+      <div class="card mx-auto bg-light">
+        <div class="card-body">
+          @if($agenda_kegiatan->isEmpty())
+          <h5 class="card-title">Tidak Ada Agenda Hari Ini</h5>
+          @else
+          @foreach ($agenda_kegiatan->take(3) as $item)
+          <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
+            <div class="card-body">
+              <p class="fs-md mb-2">
+                {{ $item->nama }}
               </p>
-            </div>
 
-            <div class="d-flex justify-content-between">
-              <div>
-                <p class="m-0">
+              <div class="badge rounded-pill bg-blue shadow-md mb-2">
+                <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
                   <small>
-                    09.30 WITA
+                    {{ $item->dihadiri_oleh }}
                   </small>
                 </p>
               </div>
 
-              <div class="d-flex">
-                <div class="my-auto">
-                  <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="m-0">
+                    <small>
+                      {{ date('H:i', strtotime($item->waktu_mulai)) }} WITA
+                    </small>
+                  </p>
                 </div>
 
-                <p class="m-0 text-blue">
-                  <small>
-                    Sedang berlangsung
-                  </small>
+                <div class="d-flex">
+                  <div class="my-auto">
+                    <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json"
+                      background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay>
+                    </dotlottie-player>
+                  </div>
+
+                  <p class="m-0 text-blue">
+                    <small>
+                      Sedang berlangsung
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endforeach
+        </div>
+      </div>
+
+      <div class="text-center mt-4 mb-5">
+        <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
+          Lihat Agenda Selengkapnya
+        </button>
+      </div>
+    </div>
+
+    {{-- Statistik Pengunjung --}}
+    <div class="bg-grey py-5">
+      <div class="container">
+        <div class="text-center">
+          <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+            STATISTIK
+          </p>
+
+          <h1 class="fs-lg fw-bold mt-3 mb-5">
+            STATISTIK PENGUNJUNG
+          </h1>
+        </div>
+
+        <div class="row w-75 mx-auto">
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card rounded-4 bg-blue">
+              <div class="card-body">
+                <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+                  MINGGU INI
+                </h1>
+                <p class="card-text text-yellow fs-lg fw-bold text-center">
+                  180
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card rounded-4 bg-blue">
+              <div class="card-body">
+                <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+                  BULAN INI
+                </h1>
+                <p class="card-text text-yellow fs-lg fw-bold text-center">
+                  2004
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 rounded-4">
+            <div class="card rounded-4 bg-blue">
+              <div class="card-body">
+                <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+                  TAHUN INI
+                </h1>
+                <p class="card-text text-yellow fs-lg fw-bold text-center">
+                  180504
                 </p>
               </div>
             </div>
           </div>
         </div>
-      @endforeach
-    </div>
-  </div>
-
-  <div class="text-center mt-4 mb-5">
-    <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
-      Lihat Agenda Selengkapnya
-    </button>
-  </div>
-</div>
-
-{{-- Statistik Pengunjung --}}
-<div class="bg-grey py-5">
-  <div class="container">
-    <div class="text-center">
-      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-        STATISTIK
-      </p>
-
-      <h1 class="fs-lg fw-bold mt-3 mb-5">
-        STATISTIK PENGUNJUNG
-      </h1>
-    </div>
-
-    <div class="row w-75 mx-auto">
-      <div class="col-sm-4 mb-3 mb-sm-0">
-        <div class="card rounded-4 bg-blue">
-          <div class="card-body">
-              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-                MINGGU INI
-              </h1>
-              <p class="card-text text-yellow fs-lg fw-bold text-center">
-                180
-              </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="card rounded-4 bg-blue">
-          <div class="card-body">
-            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-              BULAN INI
-            </h1>
-            <p class="card-text text-yellow fs-lg fw-bold text-center">
-              2004
-            </p>
-        </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 rounded-4">
-        <div class="card rounded-4 bg-blue">
-          <div class="card-body">
-            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-              TAHUN INI
-            </h1>
-            <p class="card-text text-yellow fs-lg fw-bold text-center">
-              180504
-            </p>
-        </div>
-        </div>
       </div>
     </div>
-  </div>
-</div>
 
-{{-- Partner --}}
-<div class="py-5">
+    {{-- Partner --}}
+    <div class="py-5">
 
-</div>
-@endsection
+    </div>
+    @endsection

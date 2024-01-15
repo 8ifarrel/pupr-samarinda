@@ -30,7 +30,9 @@ class HomeController extends Controller
     $berita = Berita::with(['kategori'])->latest()->take(6)->get();
 
     foreach ($berita as $item) {
+    foreach ($berita as $item) {
       $item->tanggal = $item->created_at->format('d F Y');
+      $item->judul = Str::limit(strip_tags($item->judul), 75, $end = ' ...');
       $item->judul = Str::limit(strip_tags($item->judul), 75, $end = ' ...');
     }
 
