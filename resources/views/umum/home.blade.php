@@ -440,6 +440,7 @@
 
 {{-- Partner --}}
 <div class="py-5">
-
+  p
 </div>
+
 @endsection

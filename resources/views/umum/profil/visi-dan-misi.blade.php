@@ -41,7 +41,7 @@
       </p>
     </div>
   
-    <p class="fs-default my-auto">
+    <p class="fs-default my-auto" style="width: 90%">
       Mewujudkan masyarakat kota yang religious, unggul dan berbudaya;
     </p>
   </div>  
@@ -53,7 +53,7 @@
       </p>
     </div>
   
-    <p class="fs-default my-auto">
+    <p class="fs-default my-auto" style="width: 90%">
       Mewujudkan perekonomian kota yang maju, mandiri, berkerakyatan dan berkeadilan; 
     </p>
   </div>  
@@ -65,7 +65,7 @@
       </p>
     </div>
   
-    <p class="fs-default my-auto">
+    <p class="fs-default my-auto" style="width: 90%">
       Mewujudkan pemerintahan yang professional, transparan, akuntabel dan bebas korupsi dengan memberi ruang bagi partisipasi masyarakat;  
     </p>
   </div>  
@@ -77,7 +77,7 @@
       </p>
     </div>
   
-    <p class="fs-default my-auto">
+    <p class="fs-default my-auto" style="width: 90%">
       Mewujudkan infrastruktur yang mantap dan modern; dan 
     </p>
   </div>  
@@ -89,7 +89,7 @@
       </p>
     </div>
   
-    <p class="fs-default my-auto">
+    <p class="fs-default my-auto" style="width: 90%">
       Mewujudkan lingkungan kota yang aman, nyaman, harmoni dan lestari. 
     </p>
   </div>  

@@ -6,6 +6,8 @@ use App\Models\Kategori;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
+
+
 class Berita extends Model
 {
     use HasFactory;
@@ -30,8 +32,22 @@ class Berita extends Model
 		'created_at'
 	];
 
-    public function kategori()
-    {
-        return $this->belongsTo(Kategori::class, 'id_kategori');
-    }
+	public function scopeFilter($query, array $filters)
+	{
+			$query->when($filters['kategori'] ?? false, function($query, $kategori) {
+					return $query->whereHas('kategori', function($query) use($kategori) {
+							$query->where('slug', $kategori);
+					});
+			});
+
+			$query->when($filters['search'] ?? false, function($query, $search) {
+					return $query->where('label', 'like', '%' . $search . '%')
+											 ->orWhere('isi', 'like', '%' . $search . '%');
+			});
+	}   
+
+	public function kategori()
+	{
+			return $this->belongsTo(Kategori::class, 'id_kategori');
+	}
 }

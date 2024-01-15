@@ -11,8 +11,14 @@ use DateTime;
 
 class HomeController extends Controller
 {
-  public function index()
+  public $selectedDate;
+
+  public function index($date = null)
   {
+    // Agenda kegiatan
+    $agenda_kegiatan = AgendaKegiatan::latest()->get();
+    $this->selectedDate = $date ?? now()->format('Y-m-d');
+
     // Tanggal
     $curr = new DateTime();
     $first = $curr->format('d') - $curr->format('w');
@@ -34,8 +40,6 @@ class HomeController extends Controller
       $item->judul = Str::limit(strip_tags($item->judul), 75, $end = ' ...');
     }
 
-    // Agenda kegiatan
-    $agenda_kegiatan = AgendaKegiatan::latest()->get();
 
     foreach ($agenda_kegiatan as $item) {
       $item->dihadiri_oleh = Str::limit(strip_tags($item->dihadiri_oleh), 40, $end = ' ...');
@@ -46,6 +50,8 @@ class HomeController extends Controller
       'berita' => $berita,
       'tanggal_minggu_ini' => $tanggal_minggu_ini,
       'agenda_kegiatan' => $agenda_kegiatan,
+      'selectedDate' => $this->selectedDate,
+
     ]);
   }
 }

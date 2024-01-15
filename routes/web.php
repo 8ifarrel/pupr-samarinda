@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BeritaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HalamanProfilController;
@@ -22,6 +23,10 @@ Route::get('/', [HomeController::class, 'index']);
 
 // Halaman profil
 Route::get('/profil/{page}', [HalamanProfilController::class, 'index']);
+
+// Berita
+Route::get('/berita', [BeritaController::class, 'index']);
+Route::get('/berita/{kategori:slug}', [BeritaController::class, 'kategori']);
 
 // E-Panel (nanti)
 Route::get('/dashboard', function () {
