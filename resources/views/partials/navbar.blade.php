@@ -32,7 +32,7 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav mx-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#">
+          <a class="nav-link active text-white" aria-current="page" href="{{ url('/') }}">
             Beranda
           </a>
         </li>
