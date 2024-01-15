@@ -3,6 +3,7 @@
     --blue: rgba(34, 52, 104, 1);
     --grey: rgba(240, 240, 240, 1);
 }
+
 .navbar {
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s ease-out;
 }

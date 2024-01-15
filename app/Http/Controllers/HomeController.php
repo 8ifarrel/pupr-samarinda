@@ -39,32 +39,10 @@ class HomeController extends Controller
 
     foreach ($agenda_kegiatan as $item) {
       $item->dihadiri_oleh = Str::limit(strip_tags($item->dihadiri_oleh), 40, $end = ' ...');
-
-      $start_time = Carbon::parse($item->waktu_mulai);
-      $end_time = Carbon::parse($item->waktu_selesai);
-      $agenda_date = Carbon::parse($item->tanggal); // Assuming 'tanggal' is the date column in your database
-      $current_time = Carbon::now();
-
-      // Check if the agenda date has passed
-      if ($current_time->greaterThan($agenda_date)) {
-        $item->status = 'Selesai';
-      }
-      // Check if the agenda will start within the next hour
-      elseif ($current_time->diffInMinutes($start_time) <= 60 && $current_time < $start_time) {
-        $item->status = 'Akan Berlangsung';
-      }
-      // Check if the agenda is currently ongoing
-      elseif ($current_time >= $start_time && $current_time <= $end_time) {
-        $item->status = 'Sedang Berlangsung';
-      }
-      // Default status
-      else {
-        $item->status = 'Belum Dimulai';
-      }
     }
 
     // Return
-    return view('dpupr-kota-samarinda.home', [
+    return view('umum.home', [
       'berita' => $berita,
       'tanggal_minggu_ini' => $tanggal_minggu_ini,
       'agenda_kegiatan' => $agenda_kegiatan,

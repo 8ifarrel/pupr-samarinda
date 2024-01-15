@@ -17,13 +17,13 @@ class HalamanProfilController extends Controller
             $title = "Struktur Organisasi";
         } elseif ($page === 'tupoksi') {
             $title = "Tugas, Pokok, dan Fungsi";
-        } elseif ($page === 'visi-misi') {
+        } elseif ($page === 'visi-dan-misi') {
             $title = "Visi dan Misi";
         } else {
             // 
         }
 
-        return view("dpupr-kota-samarinda.profil.$page", [
+        return view("umum.profil.$page", [
             "title" => $title
         ]);
     }

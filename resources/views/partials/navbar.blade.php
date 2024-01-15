@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between container-fluid text-blue">
       {{-- Logo --}}
       <div class="d-flex justify-content-start">
-        <a class="pe-2" href="#">
+        <a class="pe-2" href="">
           <img src="{{ asset('assets/logo/kota-samarinda.png') }}" alt="kota-samarinda" style="width: 54px">
         </a>
         <a class="pe-2" href="#">
@@ -23,7 +23,7 @@
 </div>
 
 {{-- Menu navbar --}}
-<nav class="navbar navbar-expand-lg sticky-top bg-blue">
+<nav class="navbar navbar-expand-lg sticky-top bg-blue z-3">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,12 +43,11 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Profil Kepala</a></li>
-              <li><a class="dropdown-item" href="#">Riwayat Pimpinan</a></li>
-              <li><a class="dropdown-item" href="#">Sejarah Kota Samarinda</a></li>
-              <li><a class="dropdown-item" href="#">Sejarah DPUPR Kota Samarinda</a></li>
+              <li><a class="dropdown-item" href="{{ url('profil/sejarah-kota-samarinda') }}">Sejarah Kota Samarinda</a></li>
+              <li><a class="dropdown-item" href="{{ url('profil/sejarah-dpupr-kota-samarinda') }}">Sejarah DPUPR Kota Samarinda</a></li>
               <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
               <li><a class="dropdown-item" href="#">Tugas Pokok dan Fungsi</a></li>
-              <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="{{ url('profil/visi-dan-misi') }}">Visi dan Misi</a></li>
             </ul>
           </li>
 
