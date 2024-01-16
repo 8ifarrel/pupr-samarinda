@@ -6,11 +6,11 @@
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     {{-- <div class="carousel-item" data-bs-interval="2000">
-      <img src="/assets/temp/slide_1.jpg" class="d-block w-100" alt="...">
+      <img src="/assets/temp/slide_1.jpg" class="d-block w-20" alt="...">
     </div> --}}
 
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="/assets/img/slides/slide_3.jpg" class="d-block w-100" alt="..." style="filter: brightness(35%);">
+      <img src="/assets/img/slides/slide_3.jpg" class="d-block w-20" alt="..." style="filter: brightness(35%);">
       <div class="container">
         <div class="carousel-caption d-flex justify-content-center flex-column h-100">
           <h1 class="fw-bold fs-xl pb-2">Website Resmi Dinas Pekerjaan Umum dan Penantaan Ruang Kota Samarinda</h1>
@@ -161,7 +161,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets/logo/bidang/SEKRETARIAT.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -181,7 +181,7 @@
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -194,7 +194,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets/logo/bidang/JSA.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -209,11 +209,12 @@
 
             <div class="mx-auto">
               <p class="card-text text-center">
-                Berfokus pada konservasi dan pengembangan sumber daya air.
+                Mengelola sumber daya air di berbagai wilayah, termasuk sungai, bendungan, danau, irigasi, dll., untuk
+                konservasi dan kebutuhan kota.
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -226,7 +227,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets/logo/bidang/BINAMARGA.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -241,11 +242,12 @@
 
             <div class="mx-auto">
               <p class="card-text text-center">
-                Berfokus pada perumusan dan pelaksanaan penyelenggaraan jalan.
+                Memimpin perencanaan, pembangunan, dan preservasi jalan serta jembatan. Termasuk
+                pengamanan, penerangan jalan, dan pengendalian mutu pekerjaan.
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -258,14 +260,14 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets/logo/bidang/CIPTAKARYA.png" alt="" style="height: 62px" class="position-absolute">
 
               <img src="assets/element/dot.svg" alt="" class="">
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto ">
               <h5 class="card-title fw-semibold mb-4 text-center">
                 CIPTA KARYA
               </h5>
@@ -273,11 +275,12 @@
 
             <div class="mx-auto">
               <p class="card-text text-center">
-                Berfokus pada pengembangan kawasan permukiman dan lingkungan.
+                Menangani infrastruktur permukiman, bangunan, dan pengelolaan air minum, drainase,
+                air limbah, serta persampahan di kawasan strategis kota.
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -290,7 +293,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets/logo/bidang/TATARUANG.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -305,11 +308,12 @@
 
             <div class="mx-auto">
               <p class="card-text text-center">
-                Proses perencanaan tata ruang, pemanfaatan ruang, dan pengendalian pemanfaatan ruang.
+                Menangani perumusan dan pelaksanaan aturan tata ruang sesuai kewenangan Pemerintah Kota berdasarkan
+                perundangan-undangan yang berlaku
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -322,7 +326,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets/logo/bidang/KONSTRUKSI.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -337,11 +341,12 @@
 
             <div class="mx-auto">
               <p class="card-text text-center">
-                Mengawasi dan memanajemen konstruksi serta pembinaan jasa konstruksi.
+                melaksanakan kebijakan dalam pembinaan jasa konstruksi sesuai dengan peraturan perundang-undangan yang
+                berlaku
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -354,7 +359,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets/logo/bidang/PERTANAHAN.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -369,11 +374,12 @@
 
             <div class="mx-auto">
               <p class="card-text text-center">
-                Membantu mengendalikan dan mengatur kebijakan teknis.
+                Bidang Pertanahan mengkoordinasikan izin lokasi, redistribusi dan pengadaan tanah. Juga menangani ganti
+                rugi tanah, perencanaan penggunaan tanah, dan monitoring.
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -386,7 +392,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets\logo\bidang\uptd-jalan-dan-jembatan.png" alt="" style="height: 62px"
                 class="position-absolute">
@@ -406,7 +412,7 @@
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -419,7 +425,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets\logo\bidang\DRAINASE.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -451,7 +457,7 @@
     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1500">
       <div class="card card-hover rounded-4 border-0 shadow mx-1">
         <a href="" class="text-decoration-none text-black">
-          <div class="card-body d-flex align-items-start flex-column">
+          <div class="card-body d-flex align-items-start flex-column" style="height: 420px">
             <div class="mx-auto my-4">
               <img src="assets\logo\bidang\LIMBAH.png" alt="" style="height: 62px" class="position-absolute">
 
@@ -470,7 +476,7 @@
               </p>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto mt-auto">
               <p class="card-text mt-3 mb-0 text-decoration-none text-blue fw-semibold text-center">
                 Selengkapnya
               </p>
@@ -603,138 +609,207 @@
   <div class="d-flex justify-content-center">
     {{-- Garis dan titik --}}
     <div class="d-flex flex-column me-4">
-      <div class="p-1 bg-black border border-light rounded-circle mx-auto"
-        style="height: 15px; width: 15px; margin-top: 102.7px"></div>
+      @php $tanggalKegiatanCount = $agenda_kegiatan->where('tanggal', $item->tanggal)->count(); @endphp
 
-      <div class="d-flex bg-black mx-auto" style="height: 151.9px; width: 2px;">
-        <div class="vr"></div>
-      </div>
-
-      <div class="p-1 bg-black border border-light rounded-circle mx-auto" style="height: 15px; width: 15px;"></div>
-
-      <div class="d-flex bg-black mx-auto" style="height: 151.9px; width: 2px;">
-        <div class="vr"></div>
-      </div>
-
-      <div class="p-1 bg-black border border-light rounded-circle mx-auto" style="height: 15px; width: 15px;"></div>
+      @for ($i = 0; $i < $tanggalKegiatanCount; $i++) <div
+        class="p-1 bg-black border border-light rounded-circle mx-auto" style="height: 15px; width: 15px;">
     </div>
 
-    {{-- Keterangan kegiatan --}}
-    <div class="w-50">
-      <div class="card mx-auto bg-light">
-        <div class="card-body">
-          @if($agenda_kegiatan->isEmpty())
-          <h5 class="card-title">Tidak Ada Agenda Hari Ini</h5>
-          @else
-          @foreach ($agenda_kegiatan->take(3) as $item)
-          <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
-            <div class="card-body">
-              <p class="fs-md mb-2">
-                {{ $item->nama }}
-              </p>
+    @if ($i < $tanggalKegiatanCount - 1) <div class="d-flex bg-black mx-auto" style="height: 151.9px; width: 2px;">
+      <div class="vr"></div>
+  </div>
+  @endif
+  @endfor
+</div>
 
-              <div class="badge rounded-pill bg-blue shadow-md mb-2">
-                <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
-                  <small>
-                    {{ $item->dihadiri_oleh }}
-                  </small>
-                </p>
-              </div>
+<style>
+  .d-flex.flex-column.me-4 {
+    position: relative;
+  }
 
-              <div class="d-flex justify-content-between">
-                <div>
-                  <p class="m-0">
-                    <small>
-                      {{ date('H:i', strtotime($item->waktu_mulai)) }} WITA
-                    </small>
-                  </p>
-                </div>
+  .d-flex.flex-column.me-4 .vr {
+    background-color: #000;
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+  }
+</style>
 
-                <div class="d-flex">
-                  <div class="my-auto">
-                    <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json"
-                      background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay>
-                    </dotlottie-player>
-                  </div>
 
-                  <p class="m-0 text-blue">
-                    <small>
-                      Sedang berlangsung
-                    </small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          @endforeach
-        </div>
+
+
+{{-- Keterangan kegiatan --}}
+<div class="w-50">
+  @foreach ($agenda_kegiatan->take(3) as $item)
+  @php
+  $tanggalKegiatan = \Carbon\Carbon::parse($item->tanggal);
+  $tanggalSekarang = \Carbon\Carbon::now();
+  @endphp
+
+  @if ($tanggalKegiatan->isSameDay($tanggalSekarang))
+  <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
+    <div class="card-body">
+      <p class="fs-md mb-2">
+        {{ $item->nama }}
+      </p>
+
+      <div class="badge rounded-pill bg-blue shadow-md mb-2">
+        <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
+          <small>
+            {{ $item->dihadiri_oleh }}
+          </small>
+        </p>
       </div>
 
-      <div class="text-center mt-4 mb-5">
-        <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
-          Lihat Agenda Selengkapnya
-        </button>
-      </div>
-    </div>
-
-    {{-- Statistik Pengunjung --}}
-    <div class="bg-grey py-5">
-      <div class="container">
-        <div class="text-center">
-          <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-            STATISTIK
+      <div class="d-flex justify-content-between">
+        <div>
+          <p class="m-0">
+            <small>
+              {{ $item->waktu }} | {{ $item->tempat }}
+            </small>
           </p>
-
-          <h1 class="fs-lg fw-bold mt-3 mb-5">
-            STATISTIK PENGUNJUNG
-          </h1>
         </div>
 
-        <div class="row w-75 mx-auto">
-          <div class="col-sm-4 mb-3 mb-sm-0">
-            <div class="card rounded-4 bg-blue">
-              <div class="card-body">
-                <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-                  MINGGU INI
-                </h1>
-                <p class="card-text text-yellow fs-lg fw-bold text-center">
-                  180
-                </p>
-              </div>
-            </div>
+        <div class="d-flex">
+          <div class="my-auto" id="dot-{{ $item->id }}">
+            <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json"
+              background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay>
+            </dotlottie-player>
           </div>
 
-          <div class="col-sm-4">
-            <div class="card rounded-4 bg-blue">
-              <div class="card-body">
-                <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-                  BULAN INI
-                </h1>
-                <p class="card-text text-yellow fs-lg fw-bold text-center">
-                  2004
-                </p>
-              </div>
-            </div>
-          </div>
+          <!-- Perbaikan: Menambahkan elemen dengan ID status-text dinamis berdasarkan item ID -->
+          <p id="status-{{ $item->id }}" class="m-0 text-blue">
+            <small class="status-text"></small>
+          </p>
+        </div>
 
-          <div class="col-sm-4 rounded-4">
-            <div class="card rounded-4 bg-blue">
-              <div class="card-body">
-                <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-                  TAHUN INI
-                </h1>
-                <p class="card-text text-yellow fs-lg fw-bold text-center">
-                  180504
-                </p>
-              </div>
-            </div>
+        <!-- Perbaikan: Memasukkan skrip status di dalam loop -->
+        <script>
+          function updateStatus{{ $item->id }}() {
+                  var statusElement = document.querySelector("#status-{{ $item->id }} .status-text");
+                  var dotElement = document.getElementById("dot-{{ $item->id }}");
+
+                  var now = new Date();
+                  var currentTime = now.getTime();
+
+                  var waktuMulaiString = "{{ $item->tanggal }} {{ $item->waktu }}";
+                  var waktuMulai = new Date(waktuMulaiString);
+
+                  var duration = 10800000;
+
+                  if (now.getFullYear() !== waktuMulai.getFullYear()) {
+                      statusElement.innerHTML = 'Selesai';
+                      dotElement.style.display = 'none';
+                  } else if (currentTime >= waktuMulai.getTime() && currentTime <= waktuMulai.getTime() + duration) {
+                      statusElement.innerHTML = 'Sedang Berlangsung';
+                      dotElement.style.display = 'inline';
+                  } else if (currentTime > waktuMulai.getTime() + duration) {
+                      statusElement.innerHTML = 'Selesai';
+                      dotElement.style.display = 'none';
+                  } else if (currentTime >= waktuMulai.getTime()) {
+                      var formattedTime = waktuMulai.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                      statusElement.innerHTML = formattedTime;
+                      dotElement.style.display = 'none';
+                  } else {
+                      statusElement.innerHTML = 'Belum Dimulai';
+                      dotElement.style.display = 'none';
+                  }
+              }
+
+              updateStatus{{ $item->id }}();
+              setInterval(updateStatus{{ $item->id }}, 1000);
+        </script>
+      </div>
+    </div>
+    @endif
+    @endforeach
+  </div>
+
+
+
+  <div class="text-center mt-4 mb-5">
+    <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
+      Lihat Agenda Selengkapnya
+    </button>
+  </div>
+</div>
+
+{{-- Statistik Pengunjung --}}
+<div class="bg-grey py-5">
+  <div class="container">
+    <div class="text-center">
+      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+        STATISTIK
+      </p>
+
+      <h1 class="fs-lg fw-bold mt-3 mb-5">
+        STATISTIK PENGUNJUNG
+      </h1>
+    </div>
+
+    <div class="row w-75 mx-auto">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              MINGGU INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center">
+              180
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              BULAN INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center">
+              2004
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 rounded-4">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              TAHUN INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center">
+              180504
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    {{-- Partner --}}
-    <div class="py-5">
+{{-- Partner --}}
+<div class="py-5">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active d-flex">
 
+
+
+        <a href="https://pu.go.id"><img
+            src="{{ asset('storage/kementrian-pekerjaan-umum-dan-perumahan-rakyat-republik-indonesia.png') }}"
+            class="d-block w-20" alt="..."></a>
+        <a href="http://lpse.samarindakota.go.id/eproc4"><img src="{{ asset('storage/lpse-samarinda.png') }}"
+            class="d-block w-20" alt="..."></a>
+        <a href="https://sirup.lkpp.go.id/sirup/loginctr/index"><img
+            src="{{ asset('storage/sistem-informasi-rencana-umum-pengadaan.png') }}" class="d-block w-20" alt="..."></a>
+        <a href="https://gistaru.samarindakota.go.id"><img src="{{ asset('storage/webgis-pupt.png') }}"
+            class="d-block w-20" alt="..."></a>
+      </div>
     </div>
-    @endsection
+  </div>
+</div>
+
+@endsection

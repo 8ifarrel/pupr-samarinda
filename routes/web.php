@@ -24,6 +24,10 @@ Route::get('/', [HomeController::class, 'index']);
 // Halaman profil
 Route::get('/profil/{page}', [HalamanProfilController::class, 'index']);
 
+Route::get('/agenda-kegiatan', function() {
+    return view('umum.agenda');
+});
+
 // E-Panel (nanti)
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -17,8 +17,10 @@
   
   <link rel="stylesheet" href="{{ asset('css/main.css') }}">
   <link rel="stylesheet" href="{{ asset('css/navbar.css') }}"> 
+  <link rel="stylesheet" href="{{ asset('css/calendar.css') }}"> 
   <!-- ayam -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   
 </head>
 <body>
@@ -53,5 +55,7 @@
 
   <script src="{{ asset('js/navbar.js') }}"></script>
   <script src="{{ asset('js/time.js') }}"></script>
+  <script src="{{ asset('js/calendar.js') }}"></script>
+  <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
 </body>
 </html>

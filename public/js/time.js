@@ -52,3 +52,31 @@ document.getElementById("sabtu").innerHTML = sabtu;
 document.getElementById("minggu").innerHTML  = minggu;
 
 // Tanggal yang dipilih pada agenda kegiatan
+
+function updateStatus() {
+    var statusElement = document.getElementById("status-{{ $item->id }}"); // Perbaikan ID disini
+    var now = new Date();
+    var startTime = new Date("{{ $item->waktu }}").getTime(); // Gantilah dengan cara mendapatkan waktu mulai dari data Anda
+
+    // Waktu saat ini
+    var currentTime = now.getTime();
+
+    // Durasi kegiatan dalam milidetik (misal: 1 jam = 3600000 milidetik)
+    var duration = 3600000; // Gantilah dengan durasi yang sesuai
+
+    // Logika perubahan status
+    if (currentTime >= startTime && currentTime <= startTime + duration) {
+        statusElement.innerHTML = '<small id="status-text">Sedang Berlangsung</small>';
+    } else if (currentTime > startTime + duration) {
+        statusElement.innerHTML = '<small id="status-text">Selesai</small>';
+    } else {
+        statusElement.innerHTML = '<small id="status-text">Akan Berlangsung</small>';
+    }
+}
+
+updateStatus();
+setInterval(updateStatus, 1000);
+
+
+
+

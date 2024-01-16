@@ -30,24 +30,27 @@ class HomeController extends Controller
     $berita = Berita::with(['kategori'])->latest()->take(6)->get();
 
     foreach ($berita as $item) {
-    foreach ($berita as $item) {
-      $item->tanggal = $item->created_at->format('d F Y');
-      $item->judul = Str::limit(strip_tags($item->judul), 75, $end = ' ...');
-      $item->judul = Str::limit(strip_tags($item->judul), 75, $end = ' ...');
+      foreach ($berita as $item) {
+        $item->tanggal = $item->created_at->format('d F Y');
+        $item->judul = Str::limit(strip_tags($item->judul), 75, $end = ' ...');
+        $item->judul = Str::limit(strip_tags($item->judul), 75, $end = ' ...');
+      }
+
+      // Agenda kegiatan
+      $agenda_kegiatan = AgendaKegiatan::latest()->get();
+
+      foreach ($agenda_kegiatan as $item) {
+        $item->dihadiri_oleh = Str::limit(strip_tags($item->dihadiri_oleh), 40, $end = ' ...');
+      }
+
+      // Return
+      return view('umum.home', [
+        'berita' => $berita,
+        'tanggal_minggu_ini' => $tanggal_minggu_ini,
+        'agenda_kegiatan' => $agenda_kegiatan,
+      ]);
     }
-
-    // Agenda kegiatan
-    $agenda_kegiatan = AgendaKegiatan::latest()->get();
-
-    foreach ($agenda_kegiatan as $item) {
-      $item->dihadiri_oleh = Str::limit(strip_tags($item->dihadiri_oleh), 40, $end = ' ...');
-    }
-
-    // Return
-    return view('umum.home', [
-      'berita' => $berita,
-      'tanggal_minggu_ini' => $tanggal_minggu_ini,
-      'agenda_kegiatan' => $agenda_kegiatan,
-    ]);
   }
 }
+
+
