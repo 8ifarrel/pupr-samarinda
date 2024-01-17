@@ -57,6 +57,7 @@
 
   <script src="{{ asset('js/navbar.js') }}"></script>
   <script src="{{ asset('js/time.js') }}"></script>
+
   <script src="{{ asset('js/calendar.js') }}"></script>
   <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
 </body>

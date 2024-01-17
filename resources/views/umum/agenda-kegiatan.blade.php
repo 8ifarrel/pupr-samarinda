@@ -7,7 +7,7 @@
         <div class="calendar">
             <div class="month">
                 <i class="fas fa-angle-left prev"></i>
-                <div class="date">december 2024</div>
+                <div class="date"></div>
                 <i class="fas fa-angle-right next"></i>
             </div>
             <div class="weekdays">
@@ -39,41 +39,24 @@
             <h2>Agenda Kegiatan for {{ \Carbon\Carbon::parse($selectedDate)->format('jS F Y') }}</h2>
 
             <ul>
-                @foreach($agenda_kegiatan as $agenda)
+                @forelse($agenda_kegiatan as $agenda)
                 <li>
-                    {{ $agenda->nama }} - {{ $agenda->waktu }}
+                    {{ $agenda->nama }} - {{ $agenda->tempat }}
                 </li>
-                @endforeach
+                @empty
+                <li>No agenda for this date</li>
+                @endforelse
             </ul>
-
-        </div>
-        <div class="add-event-wrapper">
-            <div class="add-event-header">
-                <div class="title">Add Event</div>
-                <i class="fas fa-times close"></i>
-            </div>
-            <div class="add-event-body">
-                <div class="add-event-input">
-                    <input type="text" placeholder="Event Name" class="event-name" />
-                </div>
-                <div class="add-event-input">
-                    <input type="text" placeholder="Event Time From" class="event-time-from" />
-                </div>
-                <div class="add-event-input">
-                    <input type="text" placeholder="Event Time To" class="event-time-to" />
-                </div>
-            </div>
-            <div class="add-event-footer">
-                <button class="add-event-btn">Add Event</button>
-            </div>
         </div>
     </div>
-    <button class="add-event">
-        <i class="fas fa-plus"></i>
-    </button>
 </div>
 
-<script src="script.js"></script>
+<script>
+    const agendaKegiatan = @json($agenda_kegiatan);
+</script>
+<script src="{{ asset('js/calendar.js') }}">
+    </script
+
 </body>
 
 </html>

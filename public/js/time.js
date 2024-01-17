@@ -26,7 +26,6 @@ function updateAgenda() {
     var month = months[now.getMonth()];
     var year = now.getFullYear();
     var timeString = month + ' ' + year;
-    elementJam.innerText = timeString;
 }
 
 updateAgenda();
