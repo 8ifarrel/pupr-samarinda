@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BeritaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HalamanProfilController;
@@ -25,6 +26,10 @@ Route::get('/get-agenda', [HomeController::class, 'getAgenda'])->name('getAgenda
 
 // Halaman profil
 Route::get('/profil/{page}', [HalamanProfilController::class, 'index']);
+
+// Berita
+Route::get('/berita', [BeritaController::class, 'index']);
+Route::get('/berita/{kategori:slug}', [BeritaController::class, 'kategori']);
 
 Route::get('/agenda-kegiatan', [AgendaKegiatanController::class, 'index']);
 

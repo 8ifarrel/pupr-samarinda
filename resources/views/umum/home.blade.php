@@ -770,7 +770,7 @@
 
   {{-- Partner --}}
   <div class="py-5">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  p    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active d-flex">
 
@@ -790,5 +790,6 @@
       </div>
     </div>
   </div>
+
 
   @endsection
