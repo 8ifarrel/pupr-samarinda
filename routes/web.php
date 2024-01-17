@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HalamanProfilController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AgendaKegiatanController;
 
 
 /*
@@ -19,26 +20,25 @@ use App\Http\Controllers\ProfileController;
 
 // Halaman utama
 Route::get('/', [HomeController::class, 'index']);
-// Route::get('/get-agendas/{date}', 'HomeController@getAgendas');
+Route::post('/', [HomeController::class, 'submitAgendaForm'])->name('submitAgendaForm');
+Route::get('/get-agenda', [HomeController::class, 'getAgenda'])->name('getAgenda');
 
 // Halaman profil
 Route::get('/profil/{page}', [HalamanProfilController::class, 'index']);
 
-Route::get('/agenda-kegiatan', function() {
-    return view('umum.agenda');
-});
+Route::get('/agenda-kegiatan', [AgendaKegiatanController::class, 'index']);
+
 
 // E-Panel (nanti)
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 
-// Edit akun
-Route::middleware('auth')->group(function () {
+    // Edit akun
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
-
+require __DIR__ . '/auth.php';

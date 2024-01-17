@@ -31,10 +31,22 @@
     </div>
     <div class="right">
         <div class="today-date">
-            <div class="event-day">wed</div>
-            <div class="event-date">12th december 2022</div>
+            <!-- Display the selected date -->
+            <div class="event-day">{{ \Carbon\Carbon::parse($selectedDate)->format('d') }}</div>
+            <div class="event-date">{{ \Carbon\Carbon::parse($selectedDate)->format('jS F Y') }}</div>
         </div>
-        <div class="events"></div>
+        <div class="events">
+            <h2>Agenda Kegiatan for {{ \Carbon\Carbon::parse($selectedDate)->format('jS F Y') }}</h2>
+
+            <ul>
+                @foreach($agenda_kegiatan as $agenda)
+                <li>
+                    {{ $agenda->nama }} - {{ $agenda->waktu }}
+                </li>
+                @endforeach
+            </ul>
+
+        </div>
         <div class="add-event-wrapper">
             <div class="add-event-header">
                 <div class="title">Add Event</div>

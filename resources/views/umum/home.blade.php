@@ -510,182 +510,160 @@
 
   <div class="card rounded-4 w-75 mx-auto border border-secondary bg-blue-18">
     <div class="card-body">
-      <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic radio toggle button group">
+      <form id="agendaForm" action="{{ route('submitAgendaForm') }}" method="post">
+        @csrf
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" {{
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+          data-date="{{ $tanggal_minggu_ini['senin'] }}" autocomplete="off" {{
           (intval(date('d'))===$tanggal_minggu_ini['senin']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio1">
-          <p class="m-0">
-            {{ $tanggal_minggu_ini['senin'] }}
-          </p>
+          <p class="m-0">{{ $tanggal_minggu_ini['senin'] }}</p>
 
-          <p class="m-0">
-            Senin
-          </p>
-          <img src="assets/element/dot-original.svg" alt="">
+          <p class="m-0">Senin</p>
+          <img src="assets/element/dot-original.svg" alt="" />
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" {{
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+          data-date="{{ $tanggal_minggu_ini['selasa'] }}" autocomplete="off" {{
           (intval(date('d'))===$tanggal_minggu_ini['selasa']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio2">
-          <p class="m-0">
-            {{ $tanggal_minggu_ini['selasa'] }}
-          </p>
+          <p class="m-0">{{ $tanggal_minggu_ini['selasa'] }}</p>
 
-          <p class="m-0">
-            Selasa
-          </p>
+          <p class="m-0">Selasa</p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" {{
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+          data-date="{{ $tanggal_minggu_ini['rabu'] }}" autocomplete="off" {{
           (intval(date('d'))===$tanggal_minggu_ini['rabu']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio3">
-          <p class="m-0">
-            {{ $tanggal_minggu_ini['rabu'] }}
-          </p>
+          <p class="m-0">{{ $tanggal_minggu_ini['rabu'] }}</p>
 
-          <p class="m-0">
-            Rabu
-          </p>
+          <p class="m-0">Rabu</p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" {{
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
+          data-date="{{ $tanggal_minggu_ini['kamis'] }}" autocomplete="off" {{
           (intval(date('d'))===$tanggal_minggu_ini['kamis']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio4">
-          <p class="m-0">
-            {{ $tanggal_minggu_ini['kamis'] }}
-          </p>
+          <p class="m-0">{{ $tanggal_minggu_ini['kamis'] }}</p>
 
-          <p class="m-0">
-            Kamis
-          </p>
+          <p class="m-0">Kamis</p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" {{
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio5"
+          data-date="{{ $tanggal_minggu_ini['jumat'] }}" autocomplete="off" {{
           (intval(date('d'))===$tanggal_minggu_ini['jumat']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio5">
-          <p class="m-0">
-            {{ $tanggal_minggu_ini['jumat'] }}
-          </p>
+          <p class="m-0">{{ $tanggal_minggu_ini['jumat'] }}</p>
 
-          <p class="m-0">
-            Jumat
-          </p>
-          <img src="assets/element/dot-original.svg" alt="">
+          <p class="m-0">Jumat</p>
+          <img src="assets/element/dot-original.svg" alt="" />
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" {{
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio6"
+          data-date="{{ $tanggal_minggu_ini['sabtu'] }}" autocomplete="off" {{
           (intval(date('d'))===$tanggal_minggu_ini['sabtu']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio6">
-          <p class="m-0" id="sabtu">
-            {{ $tanggal_minggu_ini['sabtu'] }}
-          </p>
+          <p class="m-0" id="sabtu">{{ $tanggal_minggu_ini['sabtu'] }}</p>
 
-          <p class="m-0">
-            Sabtu
-          </p>
+          <p class="m-0">Sabtu</p>
         </label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" {{
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio7"
+          data-date="{{ $tanggal_minggu_ini['minggu'] }}" autocomplete="off" {{
           (intval(date('d'))===$tanggal_minggu_ini['minggu']) ? 'checked' : '' }}>
         <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio7">
-          <p class="m-0" id="minggu">
-            {{ $tanggal_minggu_ini['minggu'] }}
-          </p>
-          <p class="m-0">
-            Minggu
-          </p>
+          <p class="m-0" id="minggu">{{ $tanggal_minggu_ini['minggu'] }}</p>
+          <p class="m-0">Minggu</p>
         </label>
+        
+        <!-- Add a submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <div id="agenda-content" class="mt-3">
+        <!-- Agenda content will be displayed here -->
       </div>
     </div>
+
+    <script>
+      document.querySelectorAll('input[name="btnradio"]').forEach((radio) => {
+            radio.addEventListener('click', function () {
+                // Get the selected date from the checked radio button
+                const selectedDate = radio.getAttribute('data-date');
+
+                // Call a function to update the agenda content based on the selected date
+                updateAgenda(selectedDate);
+            });
+        });
+
+        // Function to update agenda content based on the selected date
+        function updateAgenda(selectedDate) {
+            // Fetch the agenda for the selected date from the server using AJAX
+            // Replace the following with your actual AJAX implementation
+            // ...
+
+            // Simulate data for demonstration purposes
+            const data = { description: `Agenda for ${selectedDate}` };
+
+            // Update the agenda content based on the retrieved data
+            const agendaContent = document.getElementById('agenda-content');
+            agendaContent.innerHTML = data.description || 'No agenda for this day.';
+        }
+    </script>
   </div>
 
-  <div class="w-75 mx-auto mt-4 mb-3 me-5">
-    <p class="m-0 text-blue fs-md">
-      Terdapat <span class="fw-bold">3 kegiatan</span>
-    </p>
-  </div>
-
-  <div class="d-flex justify-content-center">
-    {{-- Garis dan titik --}}
-    <div class="d-flex flex-column me-4">
-      @php $tanggalKegiatanCount = $agenda_kegiatan->where('tanggal', $item->tanggal)->count(); @endphp
-
-      @for ($i = 0; $i < $tanggalKegiatanCount; $i++) <div
-        class="p-1 bg-black border border-light rounded-circle mx-auto" style="height: 15px; width: 15px;">
-    </div>
-
-    @if ($i < $tanggalKegiatanCount - 1) <div class="d-flex bg-black mx-auto" style="height: 151.9px; width: 2px;">
-      <div class="vr"></div>
-  </div>
-  @endif
-  @endfor
-</div>
-
-<style>
-  .d-flex.flex-column.me-4 {
-    position: relative;
-  }
-
-  .d-flex.flex-column.me-4 .vr {
-    background-color: #000;
-    width: 2px;
-    height: 100%;
-    margin: 0 auto;
-  }
-</style>
 
 
 
+  {{-- Keterangan kegiatan --}}
+  <div class="w-50">
+    @foreach ($agenda_kegiatan->take(3) as $item)
+    @php
+    $tanggalKegiatan = \Carbon\Carbon::parse($item->tanggal);
+    $tanggalSekarang = \Carbon\Carbon::now();
+    @endphp
 
-{{-- Keterangan kegiatan --}}
-<div class="w-50">
-  @foreach ($agenda_kegiatan->take(3) as $item)
-  @php
-  $tanggalKegiatan = \Carbon\Carbon::parse($item->tanggal);
-  $tanggalSekarang = \Carbon\Carbon::now();
-  @endphp
-
-  @if ($tanggalKegiatan->isSameDay($tanggalSekarang))
-  <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
-    <div class="card-body">
-      <p class="fs-md mb-2">
-        {{ $item->nama }}
-      </p>
-
-      <div class="badge rounded-pill bg-blue shadow-md mb-2">
-        <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
-          <small>
-            {{ $item->dihadiri_oleh }}
-          </small>
+    @if ($tanggalKegiatan->isSameDay($tanggalSekarang))
+    <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
+      <div class="card-body">
+        <p class="fs-md mb-2">
+          {{ $item->nama }}
         </p>
-      </div>
 
-      <div class="d-flex justify-content-between">
-        <div>
-          <p class="m-0">
+        <div class="badge rounded-pill bg-blue shadow-md mb-2">
+          <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
             <small>
-              {{ $item->waktu }} | {{ $item->tempat }}
+              {{ $item->dihadiri_oleh }}
             </small>
           </p>
         </div>
 
-        <div class="d-flex">
-          <div class="my-auto" id="dot-{{ $item->id }}">
-            <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json"
-              background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay>
-            </dotlottie-player>
+        <div class="d-flex justify-content-between">
+          <div>
+            <p class="m-0">
+              <small>
+                {{ $item->waktu }} | {{ $item->tempat }}
+              </small>
+            </p>
           </div>
 
-          <!-- Perbaikan: Menambahkan elemen dengan ID status-text dinamis berdasarkan item ID -->
-          <p id="status-{{ $item->id }}" class="m-0 text-blue">
-            <small class="status-text"></small>
-          </p>
-        </div>
+          <div class="d-flex">
+            <div class="my-auto" id="dot-{{ $item->id }}">
+              <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json"
+                background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay>
+              </dotlottie-player>
+            </div>
 
-        <!-- Perbaikan: Memasukkan skrip status di dalam loop -->
-        <script>
-          function updateStatus{{ $item->id }}() {
+            <!-- Perbaikan: Menambahkan elemen dengan ID status-text dinamis berdasarkan item ID -->
+            <p id="status-{{ $item->id }}" class="m-0 text-blue">
+              <small class="status-text"></small>
+            </p>
+          </div>
+
+          <!-- Perbaikan: Memasukkan skrip status di dalam loop -->
+          <script>
+            function updateStatus{{ $item->id }}() {
                   var statusElement = document.querySelector("#status-{{ $item->id }} .status-text");
                   var dotElement = document.getElementById("dot-{{ $item->id }}");
 
@@ -718,98 +696,99 @@
 
               updateStatus{{ $item->id }}();
               setInterval(updateStatus{{ $item->id }}, 1000);
-        </script>
+          </script>
+        </div>
       </div>
-    </div>
-    @endif
-    @endforeach
-  </div>
-
-
-
-  <div class="text-center mt-4 mb-5">
-    <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
-      Lihat Agenda Selengkapnya
-    </button>
-  </div>
-</div>
-
-{{-- Statistik Pengunjung --}}
-<div class="bg-grey py-5">
-  <div class="container">
-    <div class="text-center">
-      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-        STATISTIK
-      </p>
-
-      <h1 class="fs-lg fw-bold mt-3 mb-5">
-        STATISTIK PENGUNJUNG
-      </h1>
+      @endif
+      @endforeach
     </div>
 
-    <div class="row w-75 mx-auto">
-      <div class="col-sm-4 mb-3 mb-sm-0">
-        <div class="card rounded-4 bg-blue">
-          <div class="card-body">
-            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-              MINGGU INI
-            </h1>
-            <p class="card-text text-yellow fs-lg fw-bold text-center">
-              180
-            </p>
+
+
+    <div class="text-center mt-4 mb-5">
+      <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
+        Lihat Agenda Selengkapnya
+      </button>
+    </div>
+  </div>
+
+  {{-- Statistik Pengunjung --}}
+  <div class="bg-grey py-5">
+    <div class="container">
+      <div class="text-center">
+        <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+          STATISTIK
+        </p>
+
+        <h1 class="fs-lg fw-bold mt-3 mb-5">
+          STATISTIK PENGUNJUNG
+        </h1>
+      </div>
+
+      <div class="row w-75 mx-auto">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card rounded-4 bg-blue">
+            <div class="card-body">
+              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+                MINGGU INI
+              </h1>
+              <p class="card-text text-yellow fs-lg fw-bold text-center">
+                180
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card rounded-4 bg-blue">
+            <div class="card-body">
+              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+                BULAN INI
+              </h1>
+              <p class="card-text text-yellow fs-lg fw-bold text-center">
+                2004
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 rounded-4">
+          <div class="card rounded-4 bg-blue">
+            <div class="card-body">
+              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+                TAHUN INI
+              </h1>
+              <p class="card-text text-yellow fs-lg fw-bold text-center">
+                180504
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="col-sm-4">
-        <div class="card rounded-4 bg-blue">
-          <div class="card-body">
-            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-              BULAN INI
-            </h1>
-            <p class="card-text text-yellow fs-lg fw-bold text-center">
-              2004
-            </p>
-          </div>
-        </div>
-      </div>
+  {{-- Partner --}}
+  <div class="py-5">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active d-flex">
 
-      <div class="col-sm-4 rounded-4">
-        <div class="card rounded-4 bg-blue">
-          <div class="card-body">
-            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-              TAHUN INI
-            </h1>
-            <p class="card-text text-yellow fs-lg fw-bold text-center">
-              180504
-            </p>
-          </div>
+
+
+          <a href="https://pu.go.id"><img
+              src="{{ asset('storage/kementrian-pekerjaan-umum-dan-perumahan-rakyat-republik-indonesia.png') }}"
+              class="d-block w-20" alt="..."></a>
+          <a href="http://lpse.samarindakota.go.id/eproc4"><img src="{{ asset('storage/lpse-samarinda.png') }}"
+              class="d-block w-20" alt="..."></a>
+          <a href="https://sirup.lkpp.go.id/sirup/loginctr/index"><img
+              src="{{ asset('storage/sistem-informasi-rencana-umum-pengadaan.png') }}" class="d-block w-20"
+              alt="..."></a>
+          <a href="https://gistaru.samarindakota.go.id"><img src="{{ asset('storage/webgis-pupt.png') }}"
+              class="d-block w-20" alt="..."></a>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-{{-- Partner --}}
-<div class="py-5">
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active d-flex">
-
-
-
-        <a href="https://pu.go.id"><img
-            src="{{ asset('storage/kementrian-pekerjaan-umum-dan-perumahan-rakyat-republik-indonesia.png') }}"
-            class="d-block w-20" alt="..."></a>
-        <a href="http://lpse.samarindakota.go.id/eproc4"><img src="{{ asset('storage/lpse-samarinda.png') }}"
-            class="d-block w-20" alt="..."></a>
-        <a href="https://sirup.lkpp.go.id/sirup/loginctr/index"><img
-            src="{{ asset('storage/sistem-informasi-rencana-umum-pengadaan.png') }}" class="d-block w-20" alt="..."></a>
-        <a href="https://gistaru.samarindakota.go.id"><img src="{{ asset('storage/webgis-pupt.png') }}"
-            class="d-block w-20" alt="..."></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-@endsection
+  @endsection
