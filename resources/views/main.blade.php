@@ -46,6 +46,61 @@
     <script src="{{ asset('js/navbar.js') }}"></script>
     <script src="{{ asset('js/agenda.js') }}"></script>
 
+    <!-- Skrip JavaScript untuk Pembaruan Status -->
+    <script>
+        function updateStatusBasedOnTime(itemId, tanggal, waktu, duration) {
+        var statusElement = document.querySelector("#status-" + itemId + " .status-text");
+        var dotElement = document.getElementById("dot-" + itemId);
+
+        var now = new Date();
+        var currentTime = now.getTime();
+
+        var waktuMulaiString = tanggal + " " + waktu;
+        var waktuMulai = new Date(waktuMulaiString);
+
+        // Logika perubahan status
+        if (currentTime < waktuMulai.getTime()) {
+            // Belum Dimulai
+            statusElement.innerHTML = 'Belum Dimulai';
+            dotElement.style.display = 'none';
+        } else if (currentTime >= waktuMulai.getTime() && currentTime <= waktuMulai.getTime() + duration) {
+            // Sedang Berlangsung
+            statusElement.innerHTML = 'Sedang Berlangsung';
+            dotElement.style.display = 'inline';
+        } else if (currentTime > waktuMulai.getTime() + duration) {
+            // Selesai
+            statusElement.innerHTML = 'Selesai';
+            dotElement.style.display = 'none';
+        } else {
+            // Logika tambahan jika diperlukan
+        }
+    }
+
+    // Panggil fungsi saat DOM telah dimuat
+    document.addEventListener('DOMContentLoaded', function () {
+        // Panggil API server untuk mendapatkan data kegiatan
+        fetch('/api/agenda-kegiatan')
+            .then(response => response.json())
+            .then(data => {
+                // Daftar item kegiatan yang perlu pembaruan status
+                var kegiatanItems = data; // Data dari server
+
+                // Iterasi untuk setiap item kegiatan
+                kegiatanItems.forEach(function (item) {
+                    // Panggil fungsi untuk setiap item yang membutuhkan pembaruan status
+                    updateStatusBasedOnTime(item.id, item.tanggal, item.waktu, 10800000); // Gantilah dengan durasi yang sesuai
+                });
+
+                // Atur interval pembaruan status
+                setInterval(function () {
+                    kegiatanItems.forEach(function (item) {
+                        updateStatusBasedOnTime(item.id, item.tanggal, item.waktu, 10800000); // Gantilah dengan durasi yang sesuai
+                    });
+                }, 1000);
+            })
+            .catch(error => console.error('Error:', error));
+    });
+    </script>
 </body>
 
 </html>
