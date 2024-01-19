@@ -1,0 +1,217 @@
+:root {
+    --yellow: rgba(252, 183, 23, 1);
+    --blue: rgba(34, 52, 104, 1);
+    --grey: rgba(240, 240, 240, 1);
+    --red: red;
+
+    --yellow-70: rgba(252, 183, 23, 0.3);
+    --blue-18: rgba(34, 52, 104, 0.18);
+}
+
+/* Background color */
+
+.bg-yellow {
+    background-color: var(--yellow) !important;
+}
+
+.bg-blue {
+    background-color: var(--blue) !important;
+}
+
+.bg-grey {
+    background-color: var(--grey) !important;
+}
+
+.bg-yellow-70 {
+    background-color: var(--yellow-70) !important;
+}
+
+.bg-blue-18 {
+    background-color: var(--blue-18) !important;
+}
+
+/* Text color */
+
+.text-yellow {
+    color: var(--yellow) !important;
+}
+
+.text-blue {
+    color: var(--blue) !important;
+}
+
+.text-grey {
+    color: var(--grey) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+/* Font */
+
+p,
+h1,
+h5,
+small {
+    font-family: "Inter", sans-serif;
+}
+
+/* Font weight */
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-extrabold {
+    font-weight: 800;
+}
+
+/* Font size */
+
+.fs-default {
+    font-size: 16px;
+}
+
+.fs-md {
+    font-size: 18px;
+}
+
+.fs-lg {
+    font-size: 36px;
+}
+
+.fs-xl {
+    font-size: 50px;
+}
+
+/* Horizontal line di sebelah teks */
+
+.horizontal-blue::after {
+    content: url("assets/element/horizontal-line.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue);
+}
+
+.horizontal-yellow::after {
+    content: url("assets/element/horizontal-line.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+    width: 50px;
+    height: 2px;
+    background-color: var(--yellow);
+}
+
+.horizontal-black::after {
+    content: url("assets/element/horizontal-line.svg");
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Vertical line di sebelah teks */
+.vertical-black::after {
+    content: url("assets/element/horizontal-line.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+    width: 1.5px;
+    height: 40px;
+    background-color: black;
+}
+
+/* Card hover  */
+
+.card-hover {
+    transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Button hover */
+
+button.btn {
+    transition: 0.2s ease-in-out;
+    background-color: var(--yellow);
+    color: var(--blue);
+    font: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 20px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+button.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--blue);
+    z-index: -1;
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.5s ease-in-out;
+}
+
+button.btn:hover {
+    color: var(--yellow);
+}
+
+button.btn:hover::before {
+    clip-path: circle(100% at 50% 50%);
+}
+
+/* Radio checked */
+
+input[type="radio"]:checked + label {
+    background-color: var(--yellow-70) !important;
+}
+
+/* Tambahkan CSS di sini */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.week-header {
+    flex: 5;
+    text-align: center;
+}
+
+.calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar-day {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer; /* Menambahkan efek cursor pointer */
+    transition: background-color 0.3s ease;
+}
+
+/* Added styles for the active date */
+.calendar-day.active-date {
+    background-color: lightblue;
+}
