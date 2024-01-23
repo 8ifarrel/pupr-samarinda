@@ -5,10 +5,6 @@
 {{-- Gambar Slide --}}
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    {{-- <div class="carousel-item" data-bs-interval="2000">
-      <img src="/assets/temp/slide_1.jpg" class="d-block w-20" alt="...">
-    </div> --}}
-
     <div class="carousel-item active" data-bs-interval="2000">
       <img src="/assets/img/slides/slide_3.jpg" class="d-block w-20" alt="..." style="filter: brightness(35%);">
       <div class="container">
@@ -508,86 +504,182 @@
     </div>
   </div>
 
-  <div class="card rounded-4 w-75 mx-auto border border-secondary bg-blue-18">
-    <div class="card-body">
-      <form id="agendaForm" action="{{ route('submitAgendaForm') }}" method="post">
-        @csrf
+  <section class="page-section-ptb pt-20" style="background: rgba(255, 255, 255, 0.97)">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title mt-md-5 text-left mb-10">
+            <div class="text-blue-dark-second text-bold-800 font-medium-5">
+              Agenda<span class="text-blue-sky pl-1"> 15 - 21</span> Januari 2024
+            </div>
+            <p class="mb-20 font-medium-1 text-black">
+              Kegiatan Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div wire:id="rv83q1bohG5QGqywarma" xmlns:wire="http://www.w3.org/1999/xhtml">
+            <div class="mb-20 row">
+              <div class="col-lg-6 col-7 row mb-10">
+                <div class="col-lg-3 col-6">
+                  <select class="custom-select" wire:model="bulan">
+                    <option>-- Bulan</option>
+                    <option value="1">Januari</option>
+                    <option value="2">Februari</option>
+                    <option value="3">Maret</option>
+                    <option value="4">April</option>
+                    <option value="5">Mei</option>
+                    <option value="6">Juni</option>
+                    <option value="7">Juli</option>
+                    <option value="8">Agustus</option>
+                    <option value="9">September</option>
+                    <option value="10">Oktober</option>
+                    <option value="11">November</option>
+                    <option value="12">Desember</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 col-6 pl-0">
+                  <select class="custom-select" wire:model="tahun">
+                    <option>-- Tahun</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                  </select>
+                </div>
+              </div>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
-          data-date="{{ $tanggal_minggu_ini['senin'] }}" autocomplete="off" {{
-          (intval(date('d'))===$tanggal_minggu_ini['senin']) ? 'checked' : '' }}>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio1">
-          <p class="m-0">{{ $tanggal_minggu_ini['senin'] }}</p>
+              <div class="col-lg-6 col-5 text-right pr-0">
+                <button class="btn btn-outline-success rounded-2" wire:click="modeSelect('month')">
+                  Bulan
+                </button>
+                <button class="btn btn-outline-danger rounded-2" wire:click="modeSelect('week')">
+                  Minggu
+                </button>
+              </div>
+            </div>
+            <div class="tab round">
+              <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item mb-2">
+                  <a wire:click="dateValue('2024-01-15 00:00:00')" wire:ignore=""
+                    class="nav-link rounded-2 box-shadow-0-1 ml-1 mr-1" id="home-07-tab" data-toggle="tab"
+                    href="#home-07" role="tab" aria-controls="home-07" aria-selected="true">
+                    <div class="font-small-2 text-bold-500 text-uppercase">
+                      Sen
+                    </div>
+                    <div class="text-bold-700 font-medium-2">15</div>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a wire:click="dateValue('2024-01-16 00:00:00')" wire:ignore=""
+                    class="nav-link rounded-2 box-shadow-0-1 ml-1 mr-1" id="home-07-tab" data-toggle="tab"
+                    href="#home-07" role="tab" aria-controls="home-07" aria-selected="true">
+                    <div class="font-small-2 text-bold-500 text-uppercase">
+                      Sel
+                    </div>
+                    <div class="text-bold-700 font-medium-2">16</div>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a wire:click="dateValue('2024-01-17 00:00:00')" wire:ignore=""
+                    class="nav-link rounded-2 box-shadow-0-1 ml-1 mr-1" id="home-07-tab" data-toggle="tab"
+                    href="#home-07" role="tab" aria-controls="home-07" aria-selected="false">
+                    <div class="font-small-2 text-bold-500 text-uppercase">
+                      Rab
+                    </div>
+                    <div class="text-bold-700 font-medium-2">17</div>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a wire:click="dateValue('2024-01-18 00:00:00')" wire:ignore=""
+                    class="nav-link rounded-2 box-shadow-0-1 ml-1 mr-1 active" id="home-07-tab" data-toggle="tab"
+                    href="#home-07" role="tab" aria-controls="home-07" aria-selected="true">
+                    <div class="font-small-2 text-bold-500 text-uppercase">
+                      Kam
+                    </div>
+                    <div class="text-bold-700 font-medium-2">18</div>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a wire:click="dateValue('2024-01-19 00:00:00')" wire:ignore=""
+                    class="nav-link rounded-2 box-shadow-0-1 ml-1 mr-1" id="home-07-tab" data-toggle="tab"
+                    href="#home-07" role="tab" aria-controls="home-07" aria-selected="false">
+                    <div class="font-small-2 text-bold-500 text-uppercase">
+                      Jum
+                    </div>
+                    <div class="text-bold-700 font-medium-2">19</div>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a wire:click="dateValue('2024-01-20 00:00:00')" wire:ignore=""
+                    class="nav-link rounded-2 box-shadow-0-1 ml-1 mr-1" id="home-07-tab" data-toggle="tab"
+                    href="#home-07" role="tab" aria-controls="home-07" aria-selected="true">
+                    <div class="font-small-2 text-bold-500 text-uppercase">
+                      Sab
+                    </div>
+                    <div class="text-bold-700 font-medium-2">20</div>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a wire:click="dateValue('2024-01-21 00:00:00')" wire:ignore=""
+                    class="nav-link rounded-2 box-shadow-0-1 ml-1 mr-1" id="home-07-tab" data-toggle="tab"
+                    href="#home-07" role="tab" aria-controls="home-07" aria-selected="true">
+                    <div class="font-small-2 text-bold-500 text-uppercase">
+                      Min
+                    </div>
+                    <div class="text-bold-700 font-medium-2">21</div>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane active show" id="home-07" role="tabpanel" aria-labelledby="home-07-tab">
+                  <div class="text-center mt-120 mb-120">
+                    <img src="https://dpmptsp.samarindakota.go.id/image/callender.webp" alt=""
+                      class="img-fluid width-90" />
+                    <p class="text-bold-700 text-black font-medium-1 text-center mt-20 mb-0">
+                      Tidak ada agenda hari ini
+                    </p>
+                    <p class="text-bold-400 text-blue-grey font-small-3 text-center">
+                      Lakukan pencarian tanggal lainnya atau
+                      <a href="https://dpmptsp.samarindakota.go.id/agenda-dpmptsp"
+                        class="text-green text-bold-600"><u>Lihat Selengkapnya</u></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div wire:ignore.self="" class="modal fade backdrop detail-agenda pl-20" id="detail-agenda" tabindex="-1"
+                role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog mt-30" role="document">
+                  <div class="modal-content border-0 rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="entry-pagination mt-40 mb-40">
+              <nav aria-label="Page navigation example text-center">
+                <style>
+                  .pagination {
+                    justify-content: center;
+                  }
+                </style>
+                <div></div>
+              </nav>
+            </div>
+          </div>
 
-          <p class="m-0">Senin</p>
-          <img src="assets/element/dot-original.svg" alt="" />
-        </label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
-          data-date="{{ $tanggal_minggu_ini['selasa'] }}" autocomplete="off" {{
-          (intval(date('d'))===$tanggal_minggu_ini['selasa']) ? 'checked' : '' }}>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio2">
-          <p class="m-0">{{ $tanggal_minggu_ini['selasa'] }}</p>
-
-          <p class="m-0">Selasa</p>
-        </label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
-          data-date="{{ $tanggal_minggu_ini['rabu'] }}" autocomplete="off" {{
-          (intval(date('d'))===$tanggal_minggu_ini['rabu']) ? 'checked' : '' }}>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio3">
-          <p class="m-0">{{ $tanggal_minggu_ini['rabu'] }}</p>
-
-          <p class="m-0">Rabu</p>
-        </label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
-          data-date="{{ $tanggal_minggu_ini['kamis'] }}" autocomplete="off" {{
-          (intval(date('d'))===$tanggal_minggu_ini['kamis']) ? 'checked' : '' }}>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio4">
-          <p class="m-0">{{ $tanggal_minggu_ini['kamis'] }}</p>
-
-          <p class="m-0">Kamis</p>
-        </label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio5"
-          data-date="{{ $tanggal_minggu_ini['jumat'] }}" autocomplete="off" {{
-          (intval(date('d'))===$tanggal_minggu_ini['jumat']) ? 'checked' : '' }}>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-blue" for="btnradio5">
-          <p class="m-0">{{ $tanggal_minggu_ini['jumat'] }}</p>
-
-          <p class="m-0">Jumat</p>
-          <img src="assets/element/dot-original.svg" alt="" />
-        </label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio6"
-          data-date="{{ $tanggal_minggu_ini['sabtu'] }}" autocomplete="off" {{
-          (intval(date('d'))===$tanggal_minggu_ini['sabtu']) ? 'checked' : '' }}>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio6">
-          <p class="m-0" id="sabtu">{{ $tanggal_minggu_ini['sabtu'] }}</p>
-
-          <p class="m-0">Sabtu</p>
-        </label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio7"
-          data-date="{{ $tanggal_minggu_ini['minggu'] }}" autocomplete="off" {{
-          (intval(date('d'))===$tanggal_minggu_ini['minggu']) ? 'checked' : '' }}>
-        <label class="btn border border-0 rounded-4 fs-md fw-semibold text-red" for="btnradio7">
-          <p class="m-0" id="minggu">{{ $tanggal_minggu_ini['minggu'] }}</p>
-          <p class="m-0">Minggu</p>
-        </label>
-        
-        <!-- Add a submit button -->
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-
-      <div id="agenda-content" class="mt-3">
-        <!-- Agenda content will be displayed here -->
+          <!-- Livewire Component wire-end:rv83q1bohG5QGqywarma -->
+        </div>
       </div>
     </div>
+  </section>
 
-    <script>
-      document.querySelectorAll('input[name="btnradio"]').forEach((radio) => {
+
+  <script>
+    document.querySelectorAll('input[name="btnradio"]').forEach((radio) => {
             radio.addEventListener('click', function () {
                 // Get the selected date from the checked radio button
                 const selectedDate = radio.getAttribute('data-date');
@@ -610,60 +702,60 @@
             const agendaContent = document.getElementById('agenda-content');
             agendaContent.innerHTML = data.description || 'No agenda for this day.';
         }
-    </script>
-  </div>
+  </script>
+</div>
 
 
 
 
-  {{-- Keterangan kegiatan --}}
-  <div class="w-50">
-    @foreach ($agenda_kegiatan->take(3) as $item)
-    @php
-    $tanggalKegiatan = \Carbon\Carbon::parse($item->tanggal);
-    $tanggalSekarang = \Carbon\Carbon::now();
-    @endphp
+{{-- Keterangan kegiatan --}}
+<div class="w-50">
+  @foreach ($agenda_kegiatan->take(3) as $item)
+  @php
+  $tanggalKegiatan = \Carbon\Carbon::parse($item->tanggal);
+  $tanggalSekarang = \Carbon\Carbon::now();
+  @endphp
 
-    @if ($tanggalKegiatan->isSameDay($tanggalSekarang))
-    <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
-      <div class="card-body">
-        <p class="fs-md mb-2">
-          {{ $item->nama }}
+  @if ($tanggalKegiatan->isSameDay($tanggalSekarang))
+  <div class="card rounded-4 mx-auto border-0 bg-blue-18 my-3">
+    <div class="card-body">
+      <p class="fs-md mb-2">
+        {{ $item->nama }}
+      </p>
+
+      <div class="badge rounded-pill bg-blue shadow-md mb-2">
+        <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
+          <small>
+            {{ $item->dihadiri_oleh }}
+          </small>
         </p>
+      </div>
 
-        <div class="badge rounded-pill bg-blue shadow-md mb-2">
-          <p class=" px-2 py-1 text-yellow fw-bold m-0 fs-default">
+      <div class="d-flex justify-content-between">
+        <div>
+          <p class="m-0">
             <small>
-              {{ $item->dihadiri_oleh }}
+              {{ $item->waktu }} | {{ $item->tempat }}
             </small>
           </p>
         </div>
 
-        <div class="d-flex justify-content-between">
-          <div>
-            <p class="m-0">
-              <small>
-                {{ $item->waktu }} | {{ $item->tempat }}
-              </small>
-            </p>
+        <div class="d-flex">
+          <div class="my-auto" id="dot-{{ $item->id }}">
+            <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json"
+              background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay>
+            </dotlottie-player>
           </div>
 
-          <div class="d-flex">
-            <div class="my-auto" id="dot-{{ $item->id }}">
-              <dotlottie-player src="https://lottie.host/534d821f-20c2-4173-b8d4-b8a0e719ee64/mpgYgLfCR1.json"
-                background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay>
-              </dotlottie-player>
-            </div>
+          <!-- Perbaikan: Menambahkan elemen dengan ID status-text dinamis berdasarkan item ID -->
+          <p id="status-{{ $item->id }}" class="m-0 text-blue">
+            <small class="status-text"></small>
+          </p>
+        </div>
 
-            <!-- Perbaikan: Menambahkan elemen dengan ID status-text dinamis berdasarkan item ID -->
-            <p id="status-{{ $item->id }}" class="m-0 text-blue">
-              <small class="status-text"></small>
-            </p>
-          </div>
-
-          <!-- Perbaikan: Memasukkan skrip status di dalam loop -->
-          <script>
-            function updateStatus{{ $item->id }}() {
+        <!-- Perbaikan: Memasukkan skrip status di dalam loop -->
+        <script>
+          function updateStatus{{ $item->id }}() {
                   var statusElement = document.querySelector("#status-{{ $item->id }} .status-text");
                   var dotElement = document.getElementById("dot-{{ $item->id }}");
 
@@ -696,100 +788,96 @@
 
               updateStatus{{ $item->id }}();
               setInterval(updateStatus{{ $item->id }}, 1000);
-          </script>
-        </div>
+        </script>
       </div>
-      @endif
-      @endforeach
     </div>
-
-
-
-    <div class="text-center mt-4 mb-5">
-      <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
-        Lihat Agenda Selengkapnya
-      </button>
-    </div>
+    @endif
+    @endforeach
   </div>
 
-  {{-- Statistik Pengunjung --}}
-  <div class="bg-grey py-5">
-    <div class="container">
-      <div class="text-center">
-        <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
-          STATISTIK
-        </p>
 
-        <h1 class="fs-lg fw-bold mt-3 mb-5">
-          STATISTIK PENGUNJUNG
-        </h1>
+
+  <div class="text-center mt-4 mb-5">
+    <button class="btn rounded-5 py-2 px-4 fw-bold fs-md">
+      Lihat Agenda Selengkapnya
+    </button>
+  </div>
+</div>
+
+{{-- Statistik Pengunjung --}}
+<div class="bg-grey py-5">
+  <div class="container">
+    <div class="text-center">
+      <p class="badge rounded-pill px-3 py-2 bg-blue text-yellow fw-bold m-0 fs-default">
+        STATISTIK
+      </p>
+
+      <h1 class="fs-lg fw-bold mt-3 mb-5">
+        STATISTIK PENGUNJUNG
+      </h1>
+    </div>
+
+    <div class="row w-75 mx-auto">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              MINGGU INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center odometer">100
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div class="row w-75 mx-auto">
-        <div class="col-sm-4 mb-3 mb-sm-0">
-          <div class="card rounded-4 bg-blue">
-            <div class="card-body">
-              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-                MINGGU INI
-              </h1>
-              <p class="card-text text-yellow fs-lg fw-bold text-center">
-                180
-              </p>
-            </div>
+      <div class="col-sm-4">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              BULAN INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center odometer" id="odometer">0
+            </p>
           </div>
         </div>
+      </div>
 
-        <div class="col-sm-4">
-          <div class="card rounded-4 bg-blue">
-            <div class="card-body">
-              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-                BULAN INI
-              </h1>
-              <p class="card-text text-yellow fs-lg fw-bold text-center">
-                2004
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4 rounded-4">
-          <div class="card rounded-4 bg-blue">
-            <div class="card-body">
-              <h1 class="card-title text-yellow fs-lg fw-bold text-center">
-                TAHUN INI
-              </h1>
-              <p class="card-text text-yellow fs-lg fw-bold text-center">
-                180504
-              </p>
-            </div>
+      <div class="col-sm-4 rounded-4">
+        <div class="card rounded-4 bg-blue">
+          <div class="card-body">
+            <h1 class="card-title text-yellow fs-lg fw-bold text-center">
+              TAHUN INI
+            </h1>
+            <p class="card-text text-yellow fs-lg fw-bold text-center odometer" id="odometer">0
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  {{-- Partner --}}
-  <div class="py-5">
-  p    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active d-flex">
+{{-- Partner --}}
+<div class="py-5">
+  p <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active d-flex">
 
 
 
-          <a href="https://pu.go.id"><img
-              src="{{ asset('storage/kementrian-pekerjaan-umum-dan-perumahan-rakyat-republik-indonesia.png') }}"
-              class="d-block w-20" alt="..."></a>
-          <a href="http://lpse.samarindakota.go.id/eproc4"><img src="{{ asset('storage/lpse-samarinda.png') }}"
-              class="d-block w-20" alt="..."></a>
-          <a href="https://sirup.lkpp.go.id/sirup/loginctr/index"><img
-              src="{{ asset('storage/sistem-informasi-rencana-umum-pengadaan.png') }}" class="d-block w-20"
-              alt="..."></a>
-          <a href="https://gistaru.samarindakota.go.id"><img src="{{ asset('storage/webgis-pupt.png') }}"
-              class="d-block w-20" alt="..."></a>
-        </div>
+        <a href="https://pu.go.id"><img
+            src="{{ asset('storage/kementrian-pekerjaan-umum-dan-perumahan-rakyat-republik-indonesia.png') }}"
+            class="d-block w-20" alt="..."></a>
+        <a href="http://lpse.samarindakota.go.id/eproc4"><img src="{{ asset('storage/lpse-samarinda.png') }}"
+            class="d-block w-20" alt="..."></a>
+        <a href="https://sirup.lkpp.go.id/sirup/loginctr/index"><img
+            src="{{ asset('storage/sistem-informasi-rencana-umum-pengadaan.png') }}" class="d-block w-20" alt="..."></a>
+        <a href="https://gistaru.samarindakota.go.id"><img src="{{ asset('storage/webgis-pupt.png') }}"
+            class="d-block w-20" alt="..."></a>
       </div>
     </div>
   </div>
+</div>
 
 
-  @endsection
+@endsection

@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HalamanProfilController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\AgendaKegiatanController;
+use App\Http\Livewire\Agenda;
 
 
 /*
@@ -22,7 +22,7 @@ use App\Http\Controllers\AgendaKegiatanController;
 // Halaman utama
 Route::get('/', [HomeController::class, 'index']);
 Route::post('/', [HomeController::class, 'submitAgendaForm'])->name('submitAgendaForm');
-Route::get('/get-agenda', [HomeController::class, 'getAgenda'])->name('getAgenda');
+Route::get('/agenda', Agenda::class)->name('agenda.index');
 
 // Halaman profil
 Route::get('/profil/{page}', [HalamanProfilController::class, 'index']);
@@ -31,7 +31,7 @@ Route::get('/profil/{page}', [HalamanProfilController::class, 'index']);
 Route::get('/berita', [BeritaController::class, 'index']);
 Route::get('/berita/{kategori:slug}', [BeritaController::class, 'kategori']);
 
-Route::get('/agenda-kegiatan', [AgendaKegiatanController::class, 'index']);
+
 
 
 // E-Panel (nanti)
