@@ -4,7 +4,7 @@
     --grey: rgba(240, 240, 240, 1);
     --red: red;
 
-    --yellow-70: rgba(252, 183, 23, 0.30);
+    --yellow-70: rgba(252, 183, 23, 0.3);
     --blue-18: rgba(34, 52, 104, 0.18);
 }
 
@@ -46,7 +46,7 @@
 
 .text-red {
     color: var(--red) !important;
-} 
+}
 
 /* Font */
 
@@ -59,7 +59,7 @@ small {
 
 /* Font weight */
 
-.fw-medium  {
+.fw-medium {
     font-weight: 500 !important;
 }
 
@@ -98,44 +98,44 @@ small {
 }
 
 .horizontal-yellow::after {
-  content: url('assets/element/horizontal-line.svg');
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.4rem;
-  width: 50px;
-  height: 2px;
-  background-color: var(--yellow);
+    content: url("assets/element/horizontal-line.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+    width: 50px;
+    height: 2px;
+    background-color: var(--yellow);
 }
 
 .horizontal-black::after {
-  content: url('assets/element/horizontal-line.svg');
-  display: inline-block;
-  vertical-align: middle;
-  width: 150px;
-  height: 2px;
-  background-color: black;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    content: url("assets/element/horizontal-line.svg");
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Vertical line di sebelah teks */
 .vertical-black::after {
-    content: url('assets/element/horizontal-line.svg');
+    content: url("assets/element/horizontal-line.svg");
     display: inline-block;
     vertical-align: middle;
     margin-left: 0.4rem;
     width: 1.5px;
     height: 40px;
     background-color: black;
-  }
+}
 
 /* Card hover  */
 
 .card-hover {
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .card-hover:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Button hover */
@@ -145,7 +145,6 @@ button.btn {
     background-color: var(--yellow);
     color: var(--blue);
     font: 18px;
-    letter-spacing: 2px;
     cursor: pointer;
     padding: 20px 50px;
     position: relative;
@@ -172,6 +171,45 @@ button.btn:hover::before {
 
 /* Radio checked */
 
-input[type='radio']:checked + label{
-  background-color: var(--yellow-70) !important;
+input[type="radio"] {
+    display: none;    
+}
+
+label:hover {
+    cursor: pointer;
+    background-color: white !important;
+    text-decoration: none !important;
+}
+
+input[type="radio"]:checked + label {
+    border: solid black !important;
+}
+
+/* 16:9 wide image */
+
+.img-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.wide-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+/* Kalender */
+
+.calendar-day {
+    cursor: pointer;
+}
+
+/* Added styles for the active date */
+.calendar-day.active-date {
+    background-color: lightblue !important;
 }

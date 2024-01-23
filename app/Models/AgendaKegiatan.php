@@ -17,9 +17,6 @@ class AgendaKegiatan extends Model
         'waktu',
         'tempat',
         'dihadiri_oleh',
-    ];
-
-    protected $dates = [
         'tanggal'
     ];
 

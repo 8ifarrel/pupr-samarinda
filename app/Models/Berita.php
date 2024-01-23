@@ -19,7 +19,7 @@ class Berita extends Model
 		'foto', 
 		'sumber_foto', 
 		'judul', 
-		'slug', 
+		'slug',
 		'preview', 
 		'isi', 
 		'sumber', 
@@ -41,8 +41,7 @@ class Berita extends Model
 			});
 
 			$query->when($filters['search'] ?? false, function($query, $search) {
-					return $query->where('label', 'like', '%' . $search . '%')
-											 ->orWhere('isi', 'like', '%' . $search . '%');
+					return $query->where('judul', 'like', '%' . $search . '%');
 			});
 	}   
 

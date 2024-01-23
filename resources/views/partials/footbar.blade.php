@@ -3,12 +3,12 @@
     {{-- 1 --}}
     <div class="me-4 w-25">
       <p class="mb-3">
-        <a href="https://pupr.samarindakota.go.id/" class="me-2">
-          <img src="{{ asset('assets/logo/pupr.jpg') }}" alt="" style="height: 70px">
+        <a href="https://pupr.samarindakota.go.id/" class="me-2 text-decoration-none">
+          <img src="{{ asset('logo/pemerintah/kementrian-pupr.jpg') }}" alt="" style="height: 70px">
         </a>
 
-        <a href="https://samarindakota.go.id/">
-          <img src="{{ asset('assets/logo/kota-samarinda.png') }}" alt="" style="width: 70px">
+        <a href="https://samarindakota.go.id/" class="text-decoration-none">
+          <img src="{{ asset('logo/pemerintah/kota-samarinda.png') }}" alt="" style="width: 70px">
         </a>
       </p>
 
@@ -91,7 +91,7 @@
           </p>
           
           <p class="m-0 pb-1"><a href="mailto:pupr@samarindakota.go.id" class="mt-auto text-decoration-none text-black"><i class="bi bi-envelope"></i>
-              <small>pupr@samarindakota.go.id</small></a>
+              <small>dpuprkotasamarinda@gmail.com</small></a>
           </p>
           
           <p class="m-0 pb-1"><a href="callto:0541-203785" class="mt-auto text-decoration-none text-black"><i class="bi bi-telephone"></i>

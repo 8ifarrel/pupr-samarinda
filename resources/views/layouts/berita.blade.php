@@ -12,26 +12,8 @@
       {{ $title }}
     </h1>
   </div>
-  {{-- Breadcrumb --}}
-  <div class="badge rounded-4 bg-blue mt-4">
-    <div class="px-2 py-1">
-      <p class="p-0 my-auto text-yellow fs-default">
-        <span>
-          Home
-        </span>
-        /
-        <span>
-          Berita
-        </span>
-        /
-        <span>
-          {{ $title }}
-        </span>
-      </p>
-    </div>
-  </div>
 
-  {{-- Berita --}}
+  {{-- Kiri --}}
   <div class="row mb-5 mt-4">
     <div class="w-75">
       <div class="col">
@@ -39,56 +21,124 @@
           <div class="card-body mt-2">
             @yield('content')
 
-            {{-- Tolong tambahkan if agar hanya muncul saat berada di dalam berita --}}
-            {{-- <div class="mt-5 mb-4">
+            @if (request()->is('berita/*'))
+            <div class="mt-4 mb-4">
               <div class="d-flex justify-content-center align-items-center">
                 <p class="fs-md m-0 mx-2 vertical-black">
                   Bagikan
                 </p>
 
-                <img src="{{ asset('assets/logo/facebook.png') }}" alt="" style="height: 40px" class="mx-2">
-                <img src="{{ asset('assets/logo/instagram.svg') }}" alt="" style="height: 40px" class="mx-2">
-                <img src="{{ asset('assets/logo/whatsapp.svg') }}" alt="" style="height: 40px" class="mx-2">
-                <img src="{{ asset('assets/logo/x.svg') }}" alt="" style="height: 40px" class="mx-2">
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}"
+                  target="_blank">
+                  <img src="{{ asset('logo/sosial-media/facebook.png') }}" alt="Facebook" style="height: 40px"
+                    class="mx-2">
+                </a>
+
+                <a href="https://www.instagram.com/dpuprkotasamarinda/" target="_blank">
+                  <img src="{{ asset('logo/sosial-media/instagram.svg') }}" alt="Instagram" style="height: 40px"
+                    class="mx-2">
+                </a>
+
+                <a href="https://wa.me/?text={{ urlencode(url()->current()) }}" target="_blank">
+                  <img src="{{ asset('logo/sosial-media/whatsapp.svg') }}" alt="WhatsApp" style="height: 40px"
+                    class="mx-2">
+                </a>
               </div>
-            </div> --}}
+            </div>
+            @endif
           </div>
         </div>
       </div>
     </div>
 
+    {{-- Kanan --}}
     <div class="w-25">
-      <div class="col sticky-top z-2" style="top: 85px">
-        <div class="">
-          <div class="card rounded-5 bg-blue-18 border-0">
-            <div class="card-body">
-              <h1 class="card-title fw-bold fs-md text-center mb-4">
-                Kategori Lainnya
-              </h1>
+      {{-- Kolom search --}}
+      <div class="col mb-3">
+        <div class="card rounded-5 bg-blue-18 border-0">
+          <div class="card-body my-2">
+            <h1 class="card-title fw-extrabold fs-md text-center mb-4">
+              Cari Berita
+            </h1>
 
-              <div>
-                <hr>
+            <div>
+              <form action="/berita" class="input-group">
+                <input type="hidden" name="kategori" value="{{ request('kategori') }}">
+                <input type="text" class="form-control border-dark rounded-pill" placeholder="Masukkan judul berita"
+                  name="search" value="{{ request('search') }}">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{-- Kategori lainnya --}}
+      <div class="col">
+        <div class="card rounded-5 bg-blue-18 border-0">
+          <div class="card-body">
+            <h1 class="card-title fw-extrabold fs-md text-center mb-4 mt-2">
+              Kategori Lainnya
+            </h1>
+
+            <div>
+              <hr>
+
+              <a href="{{ url('berita?kategori=sekretariat') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ Sekretariat</p>
-                <hr>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=bidang-sumber-daya-air') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ Bidang Sumber Daya Air</p>
-                <hr>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=bidang-cipta-karya') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ Bidang Cipta Karya</p>
-                <hr>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=bidang-bina-marga') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ Bidang Bina Marga</p>
-                <hr>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=bidang-bina-konstruksi') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ Bidang Bina Konstruksi</p>
-                <hr>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=bidang-tata-ruang') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ Bidang Tata Ruang</p>
-                <hr>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=bidang-pertanahan') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ Bidang Pertanahan</p>
-                <hr>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=uptd-pengelolaan-air-limbah-domestik') }}" class="text-decoration-none text-black">
                 <p class="mb-3 fw-semibold">▷ UPTD Pengelolaan Air Limbah Domestik</p>
-                <hr>
-                <p class="mb-3 fw-semibold">▷ UPTD Pemeliharaan Jalan dan Jembatan</p>
-                <hr>
-                <p class="fw-semibold">▷ UPTD Pemeliharaan Saluran Drainase dan Irigasi</p>
-                <hr>
-              </div>
+              </a>
+
+              <hr>
+
+              <a href="{{ url('berita?kategori=uptd-pemeliharaan-jalan-dan-jembatan') }}" class="text-decoration-none text-black">
+              <p class="mb-3 fw-semibold">▷ UPTD Pemeliharaan Jalan dan Jembatan</p>
+                 
+                
+              <hr>
+              <a href="{{ url('berita?kategori=uptd-pemeliharaan-saluran-drainase-dan-irigasi') }}" class="text-decoration-none text-black">
+              <p class="fw-semibold">▷ UPTD Pemeliharaan Saluran Drainase dan Irigasi</p>
+              <hr>
             </div>
           </div>
         </div>

@@ -5,25 +5,25 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\Kategori;
-use Illuminate\Support\Str;
 
 class BeritaController extends Controller
 {
   public function index()
   {
     $kategori = Kategori::firstWhere('slug', request('kategori'));
-    $title = "$kategori->label";
+    $berita = Berita::with(['kategori'])->latest()->filter(request(['search', 'kategori']))->paginate(5)->withQueryString();
 
     return view('umum.berita.pilih', [
-      "title" => $title,
-      "berita" => Berita::with(['kategori'])->latest()->filter(request(['search', 'kategori']))->paginate(10)->withQueryString()
+      "title" => $kategori->label,
+      "berita" => $berita
     ]);
   }
 
-  public function show(Berita $post)
+  public function show(Berita $berita)
   {
-    return view('post', [
-      "post" => $post
+    return view('umum.berita.lihat', [
+      "title" => null,
+      "berita" => $berita
     ]);
   }
 

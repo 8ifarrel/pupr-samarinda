@@ -3,11 +3,11 @@
     <div class="d-flex justify-content-between container-fluid text-blue">
       {{-- Logo --}}
       <div class="d-flex justify-content-start">
-        <a class="pe-2" href="">
-          <img src="{{ asset('assets/logo/kota-samarinda.png') }}" alt="kota-samarinda" style="width: 54px">
+        <a class="pe-2" href="{{ url('https://samarindakota.go.id/') }}">
+          <img src="{{ asset('logo/pemerintah/kota-samarinda.png') }}" alt="kota-samarinda" style="width: 54px">
         </a>
-        <a class="pe-2" href="#">
-          <img src="{{ asset('assets/logo/dpupr-kota-samarinda.png') }}" alt="dpupr-kota-samarinda" style="height: 54px">
+        <a class="pe-2" href="{{ url('/') }}">
+          <img src="{{ asset('logo/pemerintah/dpupr-kota-samarinda.png') }}" alt="dpupr-kota-samarinda" style="height: 54px">
         </a>
         <p class="fw-bold m-0">
           DINAS PEKERJAAN UMUM DAN <br> PENATAAN RUANG KOTA SAMARINDA
@@ -32,7 +32,7 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav mx-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#">
+          <a class="nav-link active text-white" aria-current="page" href="{{ url('/') }}">
             Beranda
           </a>
         </li>
@@ -42,12 +42,11 @@
               Profil
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Profil Kepala</a></li>
-              <li><a class="dropdown-item" href="{{ url('profil/sejarah-kota-samarinda') }}">Sejarah Kota Samarinda</a></li>
-              <li><a class="dropdown-item" href="{{ url('profil/sejarah-dpupr-kota-samarinda') }}">Sejarah DPUPR Kota Samarinda</a></li>
-              <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
-              <li><a class="dropdown-item" href="#">Tugas Pokok dan Fungsi</a></li>
-              <li><a class="dropdown-item" href="{{ url('profil/visi-dan-misi') }}">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="{{ url('/profil/profil-kepala-dinas') }}">Profil Kepala Dinas</a></li>
+              <li><a class="dropdown-item" href="{{ url('/profil/sejarah-kota-samarinda') }}">Sejarah Kota Samarinda</a></li>
+              <li><a class="dropdown-item" href="{{ url('/profil/sejarah-dpupr-kota-samarinda') }}">Sejarah DPUPR Kota Samarinda</a></li>
+              <li><a class="dropdown-item" href="{{ url('/profil/struktur-organisasi') }}">Struktur Organisasi</a></li>
+              <li><a class="dropdown-item" href="{{ url('/profil/visi-dan-misi') }}">Visi dan Misi</a></li>
             </ul>
           </li>
 
@@ -56,8 +55,8 @@
               Informasi Dinas
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Pengumuman</a></li>
-              <li><a class="dropdown-item" href="#">Berita</a></li>
+              <li><a class="dropdown-item" href="{{ url('/pengumuman') }}">Pengumuman</a></li>
+              <li><a class="dropdown-item" href="{{ url('/kategori-berita') }}">Berita</a></li>
             </ul>
           </li>
 
@@ -66,16 +65,16 @@
               Bidang Teknis
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Sekretariat</a></li>
-              <li><a class="dropdown-item" href="#">Bidang Bina Konstruksi</a></li>
-              <li><a class="dropdown-item" href="#">Bidang Bina Marga</a></li>
-              <li><a class="dropdown-item" href="#">Bidang Cipta Karya</a></li>
-              <li><a class="dropdown-item" href="#">Bidang Pertahanan</a></li>
-              <li><a class="dropdown-item" href="#">Bidang Sumber Daya Air</a></li>
-              <li><a class="dropdown-item" href="#">Bidang Tata Ruang</a></li>
-              <li><a class="dropdown-item" href="#">UPTD Pemeliharaan Jalan dan Jembatan</a></li>
-              <li><a class="dropdown-item" href="#">UPTD Pemeliharaan Saluran Drainase dan Irigasi</a></li>
-              <li><a class="dropdown-item" href="#">UPTD Pengelolaan Air Limbah Domestik</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/sekretariat') }}">Sekretariat</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/bidang-bina-konstruksi') }}">Bidang Bina Konstruksi</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/bidang-bina-marga') }}">Bidang Bina Marga</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/bidang-cipta-karya') }}">Bidang Cipta Karya</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/bidang-pertanahan') }}">Bidang Pertahanan</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/bidang-sumber-daya-air') }}">Bidang Sumber Daya Air</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/bidang-tata-ruang') }}">Bidang Tata Ruang</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/uptd-pemeliharaan-jalan-dan-jembatan') }}">UPTD Pemeliharaan Jalan dan Jembatan</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/uptd-pemeliharaan-saluran-drainase-dan-irigasi') }}">UPTD Pemeliharaan Saluran Drainase dan Irigasi</a></li>
+              <li><a class="dropdown-item" href="{{ url('bidang/uptd-pengelolaan-air-limbah-domestik') }}">UPTD Pengelolaan Air Limbah Domestik</a></li>
             </ul>
           </li>
 
@@ -84,11 +83,11 @@
               PPID Pelaksana
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Peraturan Keputusan dan Kebijakan</a></li>
-              <li><a class="dropdown-item" href="#">Dokumen SAKIP</a></li>
-              <li><a class="dropdown-item" href="#">Informasi yang Wajib Disediakan dan Diumumkan Secara Berkala</a></li>
-              <li><a class="dropdown-item" href="#">Informasi yang Wajib Diumumkan Secara Serta-merta</a></li>
-              <li><a class="dropdown-item" href="#">Informasi yang Wajib Tersedia Setiap Saat</a></li>
+              <li><a class="dropdown-item" href="{{ url('ppid-pelaksana/peraturan-keputusan-dan-kebijakan') }}">Peraturan Keputusan dan Kebijakan</a></li>
+              <li><a class="dropdown-item" href="{{ url('ppid-pelaksana/dokumen-sakip') }}">Dokumen SAKIP</a></li>
+              <li><a class="dropdown-item" href="{{ url('ppid-pelaksana/informasi-yang-wajib-disediakan-dan-diumumkan-secara-berkala') }}">Informasi yang Wajib Disediakan dan Diumumkan Secara Berkala</a></li>
+              <li><a class="dropdown-item" href="{{ url('ppid-pelaksana/informasi-yang-wajib-diumumkan-secara-serta-merta') }}">Informasi yang Wajib Diumumkan Secara Serta-merta</a></li>
+              <li><a class="dropdown-item" href="{{ url('ppid-pelaksana/informasi-yang-wajib-tersedia-setiap-saat') }}">Informasi yang Wajib Tersedia Setiap Saat</a></li>
             </ul>
           </li>
 
@@ -97,8 +96,9 @@
               SKM
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">LAPOR!</a></li>
-              <li><a class="dropdown-item" href="#">Kuesioner Survei Kepuasan Masyarakat</a></li>
+              <li><a class="dropdown-item" href="{{ url('/skm') }}">Penilaian Website</a></li>
+              <li><a class="dropdown-item" href="{{ url('https://www.lapor.go.id/') }}">LAPOR!</a></li>
+              <li><a class="dropdown-item" href="{{ url('http://organisasi.samarindakota.go.id/skm/survei?opd=49446b66-f371-4396-b365-b3179fe52b19') }}">Kuesioner Survei Kepuasan Masyarakat</a></li>
             </ul>
           </li>
 
@@ -107,10 +107,10 @@
               Program
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Aplikasi Hantu Banyu</a></li>
-              <li><a class="dropdown-item" href="#">Aplikasi UPTD Limbah</a></li>
-              <li><a class="dropdown-item" href="#">Aplikasi Parit</a></li>
-              <li><a class="dropdown-item" href="#">Aplikasi UPTD Jalan</a></li>
+              <li><a class="dropdown-item" href="{{ url('https://pupr.samarindakota.go.id/hantubanyu') }}">Aplikasi Hantu Banyu</a></li>
+              <li><a class="dropdown-item" href="{{ url('https://pupr.samarindakota.go.id/uptdlimbah') }}">Aplikasi UPTD Limbah</a></li>
+              <li><a class="dropdown-item" href="{{ url('/program/aplikasi-parit') }}">Aplikasi Parit</a></li>
+              <li><a class="dropdown-item" href="{{ url('/program/uptd-jalan') }}">Aplikasi UPTD Jalan</a></li>
             </ul>
           </li>
 
@@ -119,9 +119,9 @@
               E-Library
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Galeri</a></li>
-              <li><a class="dropdown-item" href="#">Video</a></li>
-              <li><a class="dropdown-item" href="#">Infografis</a></li>
+              <li><a class="dropdown-item" href="{{ url('/e-library/galeri') }}">Galeri</a></li>
+              <li><a class="dropdown-item" href="{{ url('/e-library/video') }}">Video</a></li>
+              <li><a class="dropdown-item" href="{{ url('e-library/infografis') }}">Infografis</a></li>
             </ul>
           </li>
 

@@ -19,7 +19,7 @@
           <a href="/berita?kategori={{ $item->slug }}" class="text-decoration-none text-black">
             <div class="card-body d-flex align-items-start flex-column">
               <div class="mx-auto my-4">
-                <img src="{{ asset('assets/logo/kategori-berita/' . Str::slug($item->slug) . '.png') }}" alt="" style="height: 120px">
+                <img src="{{ asset('logo/kategori-berita/' . Str::slug($item->slug) . '.png') }}" alt="" style="height: 120px">
               </div>
 
               <div class="mx-auto">
@@ -30,7 +30,7 @@
 
               <div class="mx-auto">
                 <p class="card-title mb-3 mt-4 text-center fs-md">
-                  <img src="{{ asset('assets/element/folder.svg') }}" alt="" style="height: 18px" class="mb-1">
+                  <i class="bi bi-folder mb-1" style="height: 18px"></i>
                   
                   {{ $item->berita_count }} Berita
                 </p>
